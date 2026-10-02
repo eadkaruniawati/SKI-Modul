@@ -1,0 +1,852 @@
+<!doctype html>
+<html lang="id"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Media Pembelajaran Digital — Sejarah Kebudayaan Indonesia</title>
+<style>
+:root{--navy:#1F3864;--navy2:#2E5C8A;--gold:#C9A227;--ink:#16202f;--paper:#F7F4EC;--card:#fff;--line:#dfe4ec;--mut:#6B7280;--ok:#1B7F5A;--bad:#B23A48;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;-webkit-text-size-adjust:100%}
+a{color:var(--navy2)}
+header.top{background:var(--navy);color:#fff;padding:14px 20px;display:flex;align-items:center;gap:14px;position:sticky;top:0;z-index:50;box-shadow:0 1px 8px rgba(0,0,0,.18)}
+header.top h1{font-size:16px;margin:0;font-weight:600;letter-spacing:.2px}
+header.top .sub{font-size:12px;color:#c9d4e8;margin-top:2px}
+#burger{display:none;background:rgba(255,255,255,.12);border:0;color:#fff;font-size:20px;line-height:1;padding:7px 11px;border-radius:7px;cursor:pointer}
+.wrap{display:flex;align-items:flex-start;max-width:1280px;margin:0 auto}
+nav.rail{width:268px;flex:0 0 268px;padding:18px 12px 60px;position:sticky;top:64px;max-height:calc(100vh - 64px);overflow-y:auto}
+nav.rail .grp{font-size:11px;letter-spacing:.9px;text-transform:uppercase;color:var(--mut);margin:16px 8px 6px;font-weight:700}
+nav.rail button{display:block;width:100%;text-align:left;background:none;border:0;padding:8px 10px;border-radius:8px;font:inherit;font-size:14px;color:#2b3648;cursor:pointer;line-height:1.35}
+nav.rail button:hover{background:#e9e3d6}
+nav.rail button.on{background:var(--navy);color:#fff;font-weight:600}
+nav.rail button .n{display:inline-block;min-width:24px;font-variant-numeric:tabular-nums;color:var(--gold);font-weight:700;font-size:12px}
+nav.rail button.on .n{color:#f0d68a}
+main{flex:1;min-width:0;padding:26px 30px 90px;background:var(--card);min-height:100vh;border-left:1px solid var(--line);border-right:1px solid var(--line)}
+h2.pg{font-size:26px;margin:0 0 4px;color:var(--navy);line-height:1.25}
+.meta{font-size:12.5px;color:var(--mut);margin-bottom:6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 22px}
+.chip{font-size:11.5px;background:#EAF0F6;color:var(--navy);border:1px solid #cfdcea;padding:3px 10px;border-radius:99px;font-weight:600}
+.chip.g{background:#faf3dd;border-color:#e8d79a;color:#7a5f10}
+h3{font-size:14px;letter-spacing:.7px;text-transform:uppercase;color:var(--navy2);margin:30px 0 10px;font-weight:700}
+ul.t{margin:0;padding-left:20px}ul.t li{margin-bottom:6px}
+.poin{border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:10px;background:#fff}
+.poin>button{width:100%;text-align:left;background:#F4F7FB;border:0;padding:12px 15px;font:inherit;font-weight:650;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.poin>button:hover{background:#e9f0f8}
+.poin .bd{padding:0 15px;max-height:0;overflow:hidden;transition:max-height .28s ease,padding .28s ease}
+.poin.open .bd{padding:13px 15px 16px;max-height:900px}
+.poin .car{font-size:13px;color:var(--navy2);transition:transform .2s}
+.poin.open .car{transform:rotate(90deg)}
+.mcard{border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:8px;padding:12px 14px;margin-bottom:10px;background:#FFFDF6}
+.mcard .hd{font-size:12px;font-weight:700;color:#7a5f10;text-transform:uppercase;letter-spacing:.6px;margin-bottom:5px}
+.mcard .pr{background:#fff;border:1px dashed #d8cda6;border-radius:6px;padding:9px 11px;font-size:14.5px;margin-top:7px}
+.cp{margin-top:8px;background:var(--navy);color:#fff;border:0;border-radius:6px;padding:6px 13px;font:inherit;font-size:12.5px;cursor:pointer}
+.cp:hover{background:var(--navy2)}
+.note{background:#EAF0F6;border-radius:8px;padding:13px 15px;font-size:14.5px;color:#2b3648}
+.tool{border:1px solid var(--line);border-radius:12px;padding:18px 20px;background:#fff;box-shadow:0 1px 3px rgba(20,30,50,.05)}
+label.f{display:block;font-size:13px;font-weight:650;color:var(--navy);margin:14px 0 5px}
+input[type=text],textarea,select{width:100%;padding:9px 11px;border:1px solid #c9d2e0;border-radius:7px;font:inherit;font-size:15px;background:#fff}
+textarea{min-height:64px;resize:vertical}
+.btn{background:var(--navy);color:#fff;border:0;border-radius:8px;padding:10px 20px;font:inherit;font-weight:600;cursor:pointer;margin-top:16px}
+.btn:hover{background:var(--navy2)}
+.btn.sec{background:#e5e9f0;color:var(--navy)}
+.q{margin:12px 0}
+.q .opt{display:block;border:1px solid var(--line);border-radius:8px;padding:10px 13px;margin-bottom:7px;cursor:pointer;font-size:15px;background:#fff}
+.q .opt:hover{border-color:var(--navy2)}
+.q .opt.sel{border-color:var(--navy);background:#EAF0F6}
+.q .opt.ok{border-color:var(--ok);background:#e7f5ef}
+.q .opt.bad{border-color:var(--bad);background:#fbeaec}
+.q .exp{font-size:14px;background:#F4F7FB;border-left:3px solid var(--navy2);padding:10px 13px;border-radius:0 7px 7px 0;margin-top:8px}
+.res{padding:16px 18px;border-radius:10px;background:#EAF0F6;margin-top:18px;font-size:15px}
+.res b{color:var(--navy)}
+.pill{display:inline-block;padding:2px 9px;border-radius:99px;font-size:12px;font-weight:700;margin-right:6px}
+.pill.ok{background:#d9f0e6;color:#14624a}.pill.bad{background:#fadfe3;color:#8d2733}.pill.mid{background:#fdf0d5;color:#7a5f10}
+table.r{width:100%;border-collapse:collapse;font-size:14px;margin-top:10px}
+table.r th,table.r td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+table.r th{background:#EAF0F6;color:var(--navy);font-size:12.5px;text-transform:uppercase;letter-spacing:.5px}
+ol.pust{font-size:14.5px;padding-left:22px}ol.pust li{margin-bottom:9px}
+.hero{background:linear-gradient(135deg,#1F3864,#2E5C8A);color:#fff;border-radius:14px;padding:30px 32px;margin-bottom:24px}
+.hero h2{color:#fff;margin:0 0 8px;font-size:28px}
+.hero p{margin:0;color:#d5dff0;font-size:15.5px;max-width:64ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin-top:14px}
+.tile{border:1px solid var(--line);border-radius:10px;padding:14px;background:#fff;cursor:pointer;text-align:left;font:inherit}
+.tile:hover{border-color:var(--navy2);background:#f7faff}
+.tile b{display:block;color:var(--navy);margin-bottom:4px;font-size:15px}
+.tile span{font-size:13px;color:var(--mut);line-height:1.45}
+footer.ft{padding:26px 30px;font-size:12.5px;color:var(--mut);max-width:1280px;margin:0 auto;text-align:center}
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--navy);color:#fff;padding:10px 20px;border-radius:99px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .25s;z-index:99}
+.toast.on{opacity:1}
+@media print{nav.rail,#burger,.cp,.btn{display:none!important}main{border:0}.poin .bd{max-height:none!important;padding:13px 15px 16px!important}}
+@media(max-width:860px){
+ #burger{display:block}
+ .wrap{display:block}
+ nav.rail{position:fixed;top:56px;left:0;bottom:0;width:80%;max-width:300px;background:var(--paper);z-index:60;transform:translateX(-102%);transition:transform .25s;box-shadow:4px 0 20px rgba(0,0,0,.2);max-height:none}
+ nav.rail.show{transform:none}
+ main{padding:20px 16px 80px;border:0}
+ h2.pg{font-size:22px}
+ .hero{padding:22px 20px}.hero h2{font-size:22px}
+}
+</style>
+</head><body>
+<header class="top">
+ <button id="burger" aria-label="Menu">&#9776;</button>
+ <div><h1>Sejarah Kebudayaan Indonesia</h1>
+ <div class="sub">Media Pembelajaran Digital &middot; PW104 &middot; D3 Perjalanan Wisata &middot; Politeknik Bintan Cakrawala</div></div>
+</header>
+<div class="wrap"><nav class="rail" id="rail"></nav><main id="main"></main></div>
+<footer class="ft">Disusun oleh Dr. E.A.D. Karuniawati, M.Par. &middot; 2026 &middot; Berkas ini berjalan tanpa sambungan internet.</footer>
+<div class="toast" id="toast"></div>
+<script>
+// Data konten Media Pembelajaran Digital — Sejarah Kebudayaan Indonesia (PW104)
+const PERTEMUAN = [
+{ w:1, blok:1, judul:'Apa yang Kita Sebut Kebudayaan',
+  sub:'Sub-CPMK-1 — Menjelaskan konsep kebudayaan, tiga wujud budaya, dan relevansinya dalam ekonomi layanan wisata. (C2)',
+  bk:'BK-1', cpl:'CPL-2', bab:'Bab 1',
+  tujuan:['Menyebutkan definisi kebudayaan menurut sekurang-kurangnya dua tokoh.','Membedakan gagasan, aktivitas, dan artefak pada satu destinasi nyata.','Menjelaskan mengapa pemandu wisata perlu memahami kebudayaan sebagai sistem, bukan daftar atraksi.'],
+  poin:[
+    {h:'Kebudayaan sebagai sistem', d:'Koentjaraningrat memakai kata “keseluruhan sistem gagasan, tindakan, dan hasil karya manusia”. Tylor, jauh sebelumnya, menyebutnya “keseluruhan kompleks” yang mencakup pengetahuan, kepercayaan, seni, hukum, adat. Keduanya menolak kebudayaan sebagai sekadar kesenian.'},
+    {h:'Tiga wujud', d:'Gagasan (ide, norma, nilai — tidak terlihat), aktivitas (pola tindakan, upacara, kebiasaan — terlihat saat berlangsung), artefak (benda hasil karya — terlihat dan dapat disentuh). Ketiganya selalu hadir bersamaan pada satu objek wisata.'},
+    {h:'Tujuh unsur universal', d:'Bahasa, sistem pengetahuan, organisasi sosial, teknologi, mata pencaharian, religi, kesenian. Berguna sebagai daftar periksa ketika menyusun deskripsi sebuah daerah tujuan wisata.'},
+    {h:'Mengapa penting bagi layanan wisata', d:'Wisatawan membayar untuk pengalaman yang bermakna. Makna itu tersimpan pada lapisan gagasan, bukan pada permukaan benda. Pemandu yang hanya menyebut tahun dan ukuran bangunan menjual data, bukan pengalaman.'}],
+  media:[
+    {app:'Mentimeter', tipe:'Word Cloud', prompt:'Sebutkan SATU kata yang pertama muncul di kepala Anda ketika mendengar kata "budaya".'},
+    {app:'Padlet', tipe:'Kolom (3 kolom)', prompt:'Unggah satu foto dari daerah asal Anda. Letakkan di kolom yang tepat: GAGASAN / AKTIVITAS / ARTEFAK. Tulis satu kalimat alasannya.'},
+    {app:'Kahoot', tipe:'Kuis 8 soal, 20 detik', prompt:'Pengertian kebudayaan dan tiga wujud budaya — gunakan Bank Soal Pertemuan 1 pada menu Bank Soal.'}],
+  tugas:'PT: Membaca Bab 1 buku materi ajar. BM: Mendaftar lima objek budaya di sekitar tempat tinggal dan menandai wujudnya.'},
+
+{ w:2, blok:1, judul:'Keberagaman Etnik dan Rumpun Budaya Nusantara',
+  sub:'Sub-CPMK-2 — Memetakan keberagaman etnik dan rumpun budaya Nusantara serta membandingkan karakternya. (C3)',
+  bk:'BK-3', cpl:'CPL-2', bab:'Bab 1 (pengantar) + rujukan SNI I',
+  tujuan:['Memetakan sebaran rumpun budaya besar di Indonesia pada peta buta.','Membandingkan dua kelompok etnik berdasarkan unsur universal kebudayaan.','Menjelaskan makna Bhinneka Tunggal Ika sebagai kenyataan sosial, bukan slogan.'],
+  poin:[
+    {h:'Geografi membentuk budaya', d:'Indonesia adalah negara kepulauan dengan gunung api, hutan hujan, dan selat sempit yang ramai. Masyarakat pegunungan, masyarakat pesisir, dan masyarakat sungai mengembangkan mata pencaharian, rumah, dan upacara yang berbeda karena lingkungannya berbeda.'},
+    {h:'Rumpun besar', d:'Sebaran penutur Austronesia dari Sumatra sampai Papua bagian pesisir, dan penutur non-Austronesia (Papua) di pedalaman timur. Di dalamnya ratusan kelompok etnik dengan bahasa masing-masing.'},
+    {h:'Cara membandingkan yang adil', d:'Bandingkan unsur yang setara: rumah adat dengan rumah adat, upacara daur hidup dengan upacara daur hidup. Membandingkan "kemajuan" antar-etnik adalah kekeliruan metodologis sekaligus kekeliruan etis.'},
+    {h:'Bhinneka Tunggal Ika', d:'Frasa dari Kakawin Sutasoma karya Mpu Tantular, ditulis pada masa Majapahit dalam konteks hidup berdampingan Siwa dan Buddha. Ia lahir dari pengalaman nyata, bukan dari perancangan negara modern.'}],
+  media:[
+    {app:'Google Earth / Google My Maps', tipe:'Peta kolaboratif', prompt:'Setiap kelompok menandai lima titik: satu rumah adat, satu upacara, satu kain tradisional, satu kuliner, satu bahasa daerah. Sertakan satu kalimat keterangan pada tiap pin.'},
+    {app:'Mentimeter', tipe:'Ranking / Scales', prompt:'Menurut Anda, seberapa banyak wisatawan mancanegara tahu bahwa Indonesia memiliki lebih dari 700 bahasa daerah? (skala 1–5)'},
+    {app:'Quizizz', tipe:'Kuis mandiri 10 soal', prompt:'Pencocokan rumah adat, kain, dan tarian dengan provinsinya — gunakan Bank Soal Pertemuan 2.'}],
+  tugas:'PT: Menyusun tabel perbandingan dua kelompok etnik memakai tujuh unsur universal. BM: Menonton satu dokumenter pendek tentang satu kelompok etnik dan mencatat unsur yang tampak.'},
+
+{ w:3, blok:1, judul:'Lapisan Tertua: Prasejarah dan Tradisi Megalitik',
+  sub:'Sub-CPMK-3 — Mengaitkan jejak material masa prasejarah dan tradisi megalitik dengan objek wisata. (C3)',
+  bk:'BK-2', cpl:'CPL-2', bab:'Bab 3 dan Bab 4',
+  tujuan:['Menyusun urutan besar masa prasejarah Nusantara beserta penanda materialnya.','Menjelaskan fungsi bangunan megalitik dalam kaitannya dengan pemujaan leluhur.','Menilai satu situs prasejarah dari sisi kesiapannya menerima kunjungan.'],
+  poin:[
+    {h:'Urutan yang perlu diingat', d:'Berburu dan meramu — bercocok tanam — perundagian. Penandanya berturut-turut: alat batu serpih dan gua hunian; beliung persegi dan gerabah; benda perunggu seperti nekara dan kapak corong.'},
+    {h:'Megalitik bukan satu zaman', d:'Menhir, dolmen, sarkofagus, punden berundak, dan waruga muncul pada masa yang berbeda dan di sebagian daerah masih hidup sampai abad ke-20. Megalitik adalah tradisi, bukan periode.'},
+    {h:'Pemujaan leluhur', d:'Bentuk berundak yang muncul pada punden kemudian terbaca lagi pada candi masa Hindu-Buddha dan pada halaman pura. Gagasan lama tidak hilang; ia dipakai ulang dengan kosakata baru.'},
+    {h:'Situs dan kunjungan', d:'Situs prasejarah rapuh: jejak arang, lapisan tanah, dan lukisan dinding gua rusak oleh sentuhan dan cahaya. Kesiapan sebuah situs diukur dari jalur kunjung, papan tafsir, dan pengawasan, bukan dari jumlah warung di depannya.'}],
+  media:[
+    {app:'Google Arts & Culture', tipe:'Penelusuran koleksi', prompt:'Telusuri kata kunci "megalithic Indonesia" dan "nekara". Pilih satu objek, catat: apa, dari mana, diperkirakan kapan, dan apa fungsinya.'},
+    {app:'Mentimeter', tipe:'Open ended', prompt:'Setelah melihat foto punden berundak dan foto candi, tulis satu kemiripan bentuk yang Anda lihat.'},
+    {app:'Kahoot', tipe:'Kuis 10 soal, 20 detik', prompt:'Penanda material tiap masa prasejarah — gunakan Bank Soal Pertemuan 3.'}],
+  tugas:'PT: Membaca Bab 3–4. BM: Mencari satu situs megalitik di Indonesia dan menulis satu paragraf tentang kondisinya hari ini.'},
+
+{ w:4, blok:1, judul:'Zaman Kuno: Candi, Mandala, dan Tata Kota',
+  sub:'Sub-CPMK-4 — Menganalisis akulturasi budaya Hindu-Buddha melalui candi, mandala, dan tata kota kuno. (C4)',
+  bk:'BK-1, BK-2', cpl:'CPL-2 (CPL-1 pendukung)', bab:'Bab 5, 6, dan 7',
+  tujuan:['Menguraikan proses akulturasi sebagai penyerapan selektif, bukan peniruan.','Membaca denah candi dan menjelaskan susunan kosmologisnya.','Membandingkan pola kekuasaan maritim Sriwijaya dengan pola agraris Majapahit.'],
+  poin:[
+    {h:'Akulturasi, bukan penyalinan', d:'Candi Indonesia berbeda dari kuil India: ia berdiri di atas gagasan punden berundak, memakai relief bercerita gaya lokal, dan sering berfungsi sebagai pendharmaan raja. Unsur asing masuk, disaring, lalu dipakai untuk keperluan setempat.'},
+    {h:'Mandala dan pusat', d:'Denah candi menaruh pusat sebagai titik paling suci, dikelilingi lapisan yang makin duniawi. Pola yang sama terbaca pada tata kota kuno dan pada gagasan negara mandala: kekuasaan memancar dari pusat dan meredup ke pinggir.'},
+    {h:'Dua pola negara', d:'Sriwijaya menguasai selat, pelabuhan, dan jalur; kekayaannya dari lalu lintas. Majapahit menguasai lahan, panen, dan upeti; kekayaannya dari tanah. Keduanya menghasilkan bentuk budaya yang berbeda.'},
+    {h:'Bacaan sumbernya', d:'Prasasti, berita Tiongkok, Nagarakretagama, dan temuan arkeologi saling menambal. Tidak ada satu sumber pun yang mencukupi sendirian.'}],
+  media:[
+    {app:'Google Street View / Google Arts & Culture', tipe:'Kunjungan maya', prompt:'Telusuri Borobudur dan Prambanan dalam tampilan 360°. Catat tiga perbedaan susunan bangunan yang Anda lihat.'},
+    {app:'Mentimeter', tipe:'2×2 Grid', prompt:'Tempatkan Sriwijaya dan Majapahit pada grid: sumbu X maritim–agraris, sumbu Y terpusat–tersebar. Diskusikan sebaran jawaban kelas.'},
+    {app:'Quizizz', tipe:'Kuis 12 soal', prompt:'Candi, prasasti, dan kerajaan masa Hindu-Buddha — gunakan Bank Soal Pertemuan 4.'}],
+  tugas:'PT: Membuat sketsa denah satu candi beserta keterangan lapisannya. BM: Membaca Bab 5–7 dan menandai tiga istilah yang belum dipahami.'},
+
+{ w:5, blok:1, judul:'Zaman Madya: Islam, Masjid, dan Seni Ukir',
+  sub:'Sub-CPMK-5 — Menganalisis hasil kebudayaan masa Islam di Nusantara (bagian 1). (C4)',
+  bk:'BK-2', cpl:'CPL-2', bab:'Bab 9',
+  tujuan:['Menjelaskan jalur dan cara pengislaman Nusantara melalui perdagangan, perkawinan, tasawuf, dan kesenian.','Mengenali ciri masjid kuno Nusantara dan menjelaskan asal bentuknya.','Menjelaskan mengapa seni ukir Islam Nusantara memilih motif tumbuhan dan kaligrafi.'],
+  poin:[
+    {h:'Islam masuk lewat pelabuhan', d:'Pengislaman berlangsung berabad-abad, bertumpu pada jaringan dagang Samudra Hindia. Kota pelabuhan menjadi simpul pertama: Pasai, Malaka, Demak, Gresik, Banten, Makassar.'},
+    {h:'Masjid kuno Nusantara', d:'Atap tumpang bersusun, denah bujur sangkar, empat soko guru, mihrab, dan kolam wudu di depan. Menara bergaya candi pada Masjid Menara Kudus adalah contoh paling terang bahwa bentuk lama dipakai untuk isi baru.'},
+    {h:'Ukir dan kaligrafi', d:'Kecenderungan menghindari penggambaran makhluk bernyawa mendorong berkembangnya motif sulur, tumpal, dan kaligrafi Arab yang diolah menjadi bentuk daun atau burung pada mimbar dan nisan.'},
+    {h:'Yang bertahan dari sebelumnya', d:'Sedekah bumi, selamatan, dan tata cara daur hidup bertahan dengan doa yang diganti. Ini bukan “Islam yang tidak murni”, melainkan cara sebuah masyarakat menerima gagasan baru tanpa memutus dirinya dari masa lalu.'}],
+  media:[
+    {app:'Google Arts & Culture', tipe:'Penelusuran koleksi', prompt:'Cari "Masjid Menara Kudus" dan "Masjid Agung Demak". Tuliskan tiga unsur bangunan yang berasal dari masa sebelum Islam.'},
+    {app:'Padlet', tipe:'Dinding foto', prompt:'Unggah foto masjid tertua di daerah asal Anda beserta tahun berdirinya dan satu ciri bangunannya yang khas.'},
+    {app:'Kahoot', tipe:'Kuis 10 soal', prompt:'Jalur pengislaman dan ciri masjid kuno — gunakan Bank Soal Pertemuan 5.'}],
+  tugas:'PT: Membaca Bab 9. BM: Membandingkan foto masjid kuno dan masjid modern di satu kota, menulis lima kalimat.'},
+
+{ w:6, blok:1, judul:'Zaman Madya: Hikayat, Syair, Suluk, dan Makam',
+  sub:'Sub-CPMK-5 — Menganalisis hasil kebudayaan masa Islam di Nusantara (bagian 2). (C4)',
+  bk:'BK-2', cpl:'CPL-2', bab:'Bab 9 dan Bab 10',
+  tujuan:['Membedakan hikayat, syair, dan suluk berdasarkan bentuk dan fungsinya.','Menjelaskan makam sebagai artefak yang menyimpan keterangan sejarah.','Menggunakan satu petikan naskah sebagai bahan cerita di lapangan.'],
+  poin:[
+    {h:'Hikayat', d:'Prosa panjang, sering meminjam tokoh dari khazanah lama dan dari Timur Tengah. Hikayat dibacakan, bukan dibaca dalam hati; iramanya dirancang untuk telinga.'},
+    {h:'Syair', d:'Empat baris seuntai, berima a-a-a-a, dipakai untuk bercerita maupun menasihati. Gurindam Dua Belas karya Raja Ali Haji memakai bentuk lain lagi — dua baris sebab-akibat.'},
+    {h:'Suluk', d:'Karya tasawuf yang membicarakan hubungan manusia dan Tuhan dengan bahasa perlambang. Bahasa perlambang inilah yang membuat tasawuf mudah bertemu dengan alam pikiran Nusantara.'},
+    {h:'Makam sebagai arsip', d:'Nisan Aceh bertarikh, nisan Demak, dan kompleks makam Penyengat memuat nama, tarikh, gelar, dan motif ukir. Dari sana silsilah dan pertalian antar-kesultanan dapat dilacak.'}],
+  media:[
+    {app:'Mentimeter', tipe:'Open ended', prompt:'Bacalah satu bait Gurindam Dua Belas yang ditayangkan. Tulis ulang maksudnya dalam satu kalimat bahasa Anda sendiri.'},
+    {app:'Quizizz', tipe:'Kuis 10 soal', prompt:'Membedakan hikayat, syair, dan suluk — gunakan Bank Soal Pertemuan 6.'},
+    {app:'Perpustakaan digital (Khastara Perpusnas)', tipe:'Penelusuran naskah', prompt:'Telusuri satu naskah Melayu yang telah didigitalkan. Catat judul, penyalin bila ada, dan tahun penyalinan.'}],
+  tugas:'PT: Menyalin satu bait syair dan menuliskan parafrasenya. BM: Menyiapkan tiga kalimat pembuka cerita untuk sebuah kompleks makam bersejarah.'},
+
+{ w:7, blok:1, judul:'Masa Kolonial, Masa Kini, dan Status Warisan Budaya',
+  sub:'Sub-CPMK-6 — Mengaitkan corak kebudayaan masa kolonial dan kontemporer dengan status warisan budaya. (C4)',
+  bk:'BK-2, BK-4', cpl:'CPL-2 (CPL-6 penunjang)', bab:'Bab 12 dan Bab 14',
+  tujuan:['Menjelaskan perubahan cara hidup yang dibawa masa kolonial pada kota, pakaian, bahasa, dan waktu kerja.','Membedakan cagar budaya menurut UU 11/2010 dari warisan budaya takbenda menurut kerangka UNESCO.','Menelusuri status hukum satu objek budaya dan menyebut dasar hukumnya.'],
+  poin:[
+    {h:'Kota yang dibelah', d:'Kota kolonial menata ruang menurut golongan: benteng dan kantor di satu sisi, kampung pribumi di sisi lain, pecinan di antaranya. Pola ini masih terbaca pada kota tua Jakarta, Semarang, dan Tanjungpinang.'},
+    {h:'Yang ikut berubah', d:'Jalur kereta, perkebunan, sekolah, mesin cetak, dan jam kerja mengubah irama hidup. Sebagian kosakata sehari-hari kita hari ini lahir dari sana.'},
+    {h:'Cagar budaya — UU 11/2010', d:'Objek kebendaan: benda, bangunan, struktur, situs, dan kawasan. Kriteria pokok: berusia sekurang-kurangnya 50 tahun, mewakili gaya paling singkat 50 tahun, memiliki arti khusus, dan bernilai budaya bagi penguatan jati diri bangsa. Penetapannya berjenjang dari kabupaten/kota sampai nasional.'},
+    {h:'Warisan budaya takbenda', d:'Tradisi lisan, seni pertunjukan, adat istiadat dan perayaan, pengetahuan tentang alam, serta kemahiran kerajinan. Jalurnya terpisah: penetapan WBTb Indonesia oleh kementerian, dan pengusulan ke daftar UNESCO. UU 11/2010 tidak mencakup ranah ini.'}],
+  media:[
+    {app:'Penelusur Status Warisan (alat pada media ini)', tipe:'Pohon keputusan', prompt:'Masukkan satu objek budaya pilihan Anda dan telusuri jalur penetapannya.'},
+    {app:'Mentimeter', tipe:'Multiple choice', prompt:'Rendang termasuk: (a) cagar budaya (b) warisan budaya takbenda (c) keduanya (d) belum ditetapkan. Bahas hasilnya bersama.'},
+    {app:'Kahoot', tipe:'Kuis 10 soal', prompt:'Kriteria cagar budaya dan lima domain WBTb — gunakan Bank Soal Pertemuan 7.'}],
+  tugas:'PT: Menelusuri satu objek pada laman WBTb Kemendikbud dan mencatat tahun penetapannya. BM: Menyiapkan bahan Proyek 1.'},
+
+{ w:8, blok:1, judul:'Proyek 1 — Cultural Heritage Trail Map',
+  sub:'Sub-CPMK-7 — Merancang peta rute wisata tematik sejarah budaya secara berkelompok. (C6) — Evaluasi Tengah Semester',
+  bk:'BK-2, BK-3, BK-4, BK-7', cpl:'CPL-6 (CPL-4 pendukung)', bab:'Bab 8',
+  tujuan:['Menetapkan satu tema pengikat yang membuat rute masuk akal sebagai satu cerita.','Memilih lima sampai tujuh titik dengan alasan dan urutan yang dapat dipertanggungjawabkan.','Menyajikan rute beserta perkiraan waktu, jarak, dan catatan kelayakan.'],
+  poin:[
+    {h:'Tema lebih dulu, titik kemudian', d:'Rute tanpa tema hanya daftar tempat. Tema yang baik dapat dinyatakan dalam satu kalimat: “bagaimana sebuah kota pelabuhan tumbuh dari dermaga ke pasar ke rumah ibadah”.'},
+    {h:'Kelayakan', d:'Jarak antartitik, waktu tempuh, jam buka, ketersediaan toilet dan tempat berteduh, serta akses bagi pengunjung berkursi roda. Rute yang indah di atas kertas tetapi tidak dapat ditempuh bukan rancangan yang selesai.'},
+    {h:'Sumber dan kejujuran', d:'Tiap titik disertai sumber keterangan. Bila suatu cerita berstatus tutur setempat dan belum didukung sumber tertulis, nyatakan demikian — jangan disajikan sebagai fakta.'},
+    {h:'Luaran', d:'Peta digital (Google My Maps), lembar keterangan tiap titik, dan presentasi 10 menit per kelompok.'}],
+  media:[
+    {app:'Google My Maps', tipe:'Peta rute', prompt:'Buat peta baru, tandai 5–7 titik berurutan, tambahkan foto dan keterangan 3–5 kalimat pada tiap titik, lalu tarik garis rute.'},
+    {app:'Canva', tipe:'Lembar rute', prompt:'Susun satu lembar A4 berisi judul tema, peta kecil, urutan titik, perkiraan waktu, dan catatan kelayakan.'},
+    {app:'Mentimeter', tipe:'Penilaian sejawat', prompt:'Setelah tiap presentasi, beri skor 1–5 untuk: kejelasan tema, ketepatan sumber, kelayakan rute.'}],
+  tugas:'Penilaian: Rubrik analitik Proyek 1 (lihat RPS bagian D). Bobot 20%.'},
+
+{ w:9, blok:2, judul:'Kesultanan Riau-Lingga, Tuhfat al-Nafis, dan Penyengat',
+  sub:'Sub-CPMK-8 — Menganalisis akar sejarah Kesultanan Riau-Lingga, naskah Tuhfat al-Nafis, dan kedudukan Pulau Penyengat. (C4)',
+  bk:'BK-5', cpl:'CPL-2 (CPL-1 pendukung)', bab:'Bab 10',
+  tujuan:['Menyusun garis waktu dari Melaka ke Johor-Riau sampai Riau-Lingga.','Menjelaskan kedudukan Tuhfat al-Nafis sebagai sumber sekaligus sebagai karya bersudut pandang.','Menyebutkan bangunan penting di Pulau Penyengat dan makna kedudukannya.'],
+  poin:[
+    {h:'Garis keturunan kekuasaan', d:'Jatuhnya Melaka 1511 memindahkan pusat ke Johor, lalu ke Riau. Perjanjian London 1824 membelah dunia Melayu menjadi wilayah Britania dan Belanda; Riau-Lingga berada di sisi Belanda.'},
+    {h:'Tuhfat al-Nafis', d:'Ditulis Raja Ali Haji pada abad ke-19. Ia memuat silsilah, peperangan, dan perjanjian — terutama peran keluarga Bugis dalam kekuasaan Riau. Sebagai sumber ia berharga; sebagai karya ia ditulis dari dalam keluarga yang diceritakannya. Keduanya harus disebut.'},
+    {h:'Pulau Penyengat', d:'Pulau mas kawin, kemudian pusat pemerintahan dan ilmu. Masjid Raya Sultan Riau dengan adukan putih telurnya, kompleks makam Raja Ali Haji, balai adat, dan reruntuhan istana berada dalam satu pulau kecil yang dapat ditempuh berjalan kaki.'},
+    {h:'Bagi pemandu', d:'Penyengat adalah contoh langka: naskah, tokoh, bangunan, dan makam berada di satu tempat. Cerita dapat disusun rapat tanpa berpindah jauh.'}],
+  media:[
+    {app:'Google Street View', tipe:'Kunjungan maya', prompt:'Telusuri Pulau Penyengat. Susun urutan kunjungan dari dermaga ke masjid ke makam, catat perkiraan waktu jalan kaki.'},
+    {app:'Mentimeter', tipe:'Open ended', prompt:'Menurut Anda, apa risikonya bila seorang pemandu menyampaikan isi Tuhfat al-Nafis sebagai kebenaran tunggal?'},
+    {app:'Quizizz', tipe:'Kuis 12 soal', prompt:'Garis waktu Melaka–Johor–Riau-Lingga dan tokoh Penyengat — gunakan Bank Soal Pertemuan 9.'}],
+  tugas:'PT: Membuat garis waktu 1511–1913. BM: Membaca Bab 10 dan petikan Tuhfat al-Nafis yang dibagikan.'},
+
+{ w:10, blok:2, judul:'Bahasa Melayu, Raja Ali Haji, dan Seni Pertunjukan',
+  sub:'Sub-CPMK-9 — Menganalisis kedudukan bahasa Melayu Riau, karya Raja Ali Haji, dan seni pertunjukan Kepri. (C4)',
+  bk:'BK-5', cpl:'CPL-2', bab:'Bab 13',
+  tujuan:['Menjelaskan jalan bahasa Melayu menjadi bahasa Indonesia.','Menyebutkan karya Raja Ali Haji dan sumbangannya pada penataan bahasa.','Mengenali bentuk seni pertunjukan Kepri dan menjelaskan kesempatan penyajiannya bagi wisatawan.'],
+  poin:[
+    {h:'Dari lingua franca ke bahasa negara', d:'Melayu telah menjadi bahasa perantara pelabuhan berabad-abad sebelum 1928. Sumpah Pemuda mengangkatnya sebagai bahasa persatuan; pilihan itu bertumpu pada kenyataan, bukan pada jumlah penutur ibu.'},
+    {h:'Raja Ali Haji', d:'Gurindam Dua Belas, Bustanul Katibin, dan Kitab Pengetahuan Bahasa. Yang terakhir adalah rintisan kamus dan tata bahasa Melayu — alasan pokok gelar Pahlawan Nasional yang diberikan kepadanya pada 2004.'},
+    {h:'Seni pertunjukan Kepri', d:'Makyong, mendu, joget dangkung, zapin, gazal, dan tari inai. Sebagian telah ditetapkan sebagai warisan budaya takbenda Indonesia; Makyong tercatat dalam daftar UNESCO melalui jalur bersama.'},
+    {h:'Menyajikan pertunjukan', d:'Pertunjukan utuh berdurasi panjang. Penyajian bagi wisatawan menuntut pemadatan — dan pemadatan selalu berisiko memotong makna. Pemadatan yang jujur menyebutkan apa yang dipotong.'}],
+  media:[
+    {app:'YouTube (daftar putar kelas)', tipe:'Simak dan catat', prompt:'Simak satu rekaman Makyong dan satu rekaman joget dangkung. Catat perbedaan iringan, busana, dan pola gerak.'},
+    {app:'Mentimeter', tipe:'Word cloud', prompt:'Satu kata yang menggambarkan kesan Anda setelah menyaksikan Makyong.'},
+    {app:'Kahoot', tipe:'Kuis 10 soal', prompt:'Karya Raja Ali Haji dan seni pertunjukan Kepri — gunakan Bank Soal Pertemuan 10.'}],
+  tugas:'PT: Menuliskan tiga bait Gurindam dan maknanya. BM: Membaca Bab 13.'},
+
+{ w:11, blok:2, judul:'Menghimpun Data Budaya: Sumber, Instrumen, Wawancara',
+  sub:'Sub-CPMK-9 dan 10 — Menghimpun dan mengolah data primer serta sekunder tentang budaya. (C4)',
+  bk:'BK-5, BK-7', cpl:'CPL-2', bab:'Bab 2 dan Bab 11',
+  tujuan:['Membedakan sumber primer, sekunder, dan tersier serta menilai kesahihannya.','Menyusun instrumen wawancara sederhana yang tidak menuntun jawaban.','Menerapkan etika penghimpunan data: izin, perekaman, dan penyebutan narasumber.'],
+  poin:[
+    {h:'Jenis sumber', d:'Primer: naskah, prasasti, foto lama, benda, dan keterangan pelaku atau saksi. Sekunder: buku dan artikel yang mengolah sumber primer. Tersier: ensiklopedia dan laman ringkasan. Rujukan tersier dipakai untuk mencari jalan, bukan untuk dikutip.'},
+    {h:'Kritik sumber', d:'Empat pertanyaan: siapa yang membuat, untuk siapa dibuat, seberapa dekat pembuat dengan peristiwa, dan apakah keterangannya didukung sumber lain yang berdiri sendiri.'},
+    {h:'Menyusun pertanyaan', d:'Pertanyaan terbuka lebih dahulu, pertanyaan menyempit kemudian. Hindari pertanyaan yang sudah memuat jawaban. Sediakan pertanyaan lanjutan “boleh diceritakan lebih jauh?”.'},
+    {h:'Etika', d:'Minta izin sebelum merekam, jelaskan penggunaannya, tawarkan salinan hasil, dan sebutkan nama narasumber sesuai persetujuannya. Pengetahuan yang bersifat tertutup bagi kalangan tertentu tidak dipublikasikan tanpa izin.'}],
+  media:[
+    {app:'Penyaring Kesahihan Sumber (alat pada media ini)', tipe:'Daftar periksa', prompt:'Uji satu sumber yang akan Anda pakai pada Proyek 2 dan simpan hasilnya.'},
+    {app:'Google Forms', tipe:'Instrumen', prompt:'Susun instrumen wawancara 8 butir untuk satu narasumber budaya. Ujicobakan pada teman sekelompok.'},
+    {app:'Padlet', tipe:'Dinding catatan lapangan', prompt:'Unggah satu foto lapangan beserta keterangan: apa, di mana, kapan, siapa yang menjelaskan.'}],
+  tugas:'PT: Menyusun instrumen wawancara dan daftar sumber Proyek 2. BM: Melakukan satu wawancara percobaan dan menyalin hasilnya.'},
+
+{ w:12, blok:2, judul:'Akulturasi Melayu, Bugis, Tionghoa, dan Orang Laut',
+  sub:'Sub-CPMK-10 — Membandingkan kontribusi kelompok Melayu, Bugis, Tionghoa, dan Orang Laut pada kebudayaan Kepri. (C4)',
+  bk:'BK-5', cpl:'CPL-2', bab:'Bab 11',
+  tujuan:['Menelusuri jejak tiap kelompok pada kuliner, adat perkawinan, dan kerajinan.','Menjelaskan akulturasi sebagai proses dua arah yang berlangsung lama.','Menyusun keterangan objek yang menyebutkan lebih dari satu sumbangan budaya.'],
+  poin:[
+    {h:'Melayu', d:'Bahasa, adat istiadat perkawinan, tepak sirih sebagai penanda kesantunan, pantun sebagai cara bertutur, dan tenun songket sebagai busana kebesaran.'},
+    {h:'Bugis', d:'Kecakapan pelayaran dan pembuatan perahu, serta peran politik melalui jabatan Yang Dipertuan Muda — jalur yang diceritakan panjang lebar dalam Tuhfat al-Nafis.'},
+    {h:'Tionghoa', d:'Kelenteng, perdagangan, pertambangan, dan sumbangan kuliner: mi, kue, dan cara memasak yang kemudian berpadu dengan bumbu setempat.'},
+    {h:'Orang Laut', d:'Pengetahuan perairan, arus, dan pulau. Mereka menjadi kekuatan penjaga selat pada masa kesultanan. Kedudukan mereka hari ini kerap terpinggir dari cerita resmi — ini persoalan yang perlu disebut, bukan dihindari.'}],
+  media:[
+    {app:'Padlet', tipe:'Peta akulturasi', prompt:'Buat empat kolom (Melayu, Bugis, Tionghoa, Orang Laut). Tempatkan satu kuliner, satu kerajinan, dan satu istilah pada kolom yang tepat. Jika sebuah objek masuk lebih dari satu kolom, jelaskan mengapa.'},
+    {app:'Mentimeter', tipe:'Open ended', prompt:'Sebutkan satu makanan Kepri yang menurut Anda tidak berasal dari satu kelompok budaya saja.'},
+    {app:'Quizizz', tipe:'Kuis 10 soal', prompt:'Jejak empat kelompok pada budaya Kepri — gunakan Bank Soal Pertemuan 12.'}],
+  tugas:'PT: Menyusun tabel sumbangan empat kelompok pada tiga bidang. BM: Menghimpun bahan Proyek 2.'},
+
+{ w:13, blok:2, judul:'Komodifikasi, Autentisitas, dan Etika Penyajian',
+  sub:'Sub-CPMK-11 — Mengkritisi komodifikasi budaya dan merumuskan prinsip penyajian warisan budaya. (C5)',
+  bk:'BK-6', cpl:'CPL-2 (CPL-1 pendukung)', bab:'Bab 15',
+  tujuan:['Menjelaskan komodifikasi budaya beserta akibat baik dan buruknya.','Menilai satu penyajian budaya wisata dengan kriteria autentisitas dan penghormatan.','Merumuskan prinsip penyajian yang dapat dipertanggungjawabkan.'],
+  poin:[
+    {h:'Komodifikasi', d:'Proses ketika unsur budaya diubah menjadi barang atau jasa yang diperdagangkan. Ia dapat menghidupi pelaku dan menjaga keterampilan tetap terpakai; ia juga dapat memotong makna, memendekkan upacara, dan mengubah pemilik cerita menjadi penonton.'},
+    {h:'Autentisitas bukan kebekuan', d:'Kebudayaan selalu berubah. Yang dipersoalkan bukan perubahan, melainkan siapa yang memutuskan perubahan itu. Perubahan yang diputuskan pemangku budaya berbeda kedudukannya dari perubahan yang dipaksakan pasar.'},
+    {h:'Batas yang tidak dilanggar', d:'Upacara tertutup tidak dijadikan tontonan. Benda sakral tidak dipegang untuk berswafoto. Pengetahuan yang diwariskan terbatas tidak disiarkan. Ketika ragu, tanyakan kepada pemangku, bukan kepada penyelenggara acara.'},
+    {h:'Peran pemandu', d:'Pemandu berdiri di antara tamu dan tuan rumah. Ia menyampaikan aturan tuan rumah kepada tamu sebelum tamu melanggarnya — bukan meminta maaf setelahnya.'}],
+  media:[
+    {app:'Mentimeter', tipe:'Scales', prompt:'Nilai tiga cuplikan video penyajian budaya wisata pada skala 1–5 untuk: penghormatan, kejelasan keterangan, keterlibatan pemangku budaya.'},
+    {app:'Jamboard / Padlet', tipe:'Perumusan bersama', prompt:'Susun bersama "Sepuluh Prinsip Penyajian Budaya" versi kelas. Setiap kelompok mengusulkan dua prinsip, lalu kelas menyaringnya menjadi sepuluh.'},
+    {app:'Kahoot', tipe:'Kuis 8 soal', prompt:'Konsep komodifikasi dan autentisitas — gunakan Bank Soal Pertemuan 13.'}],
+  tugas:'PT: Menulis ulasan 400 kata atas satu penyajian budaya wisata. BM: Menyusun draf naskah Proyek 2.'},
+
+{ w:14, blok:2, judul:'Pelestarian dan Manajemen Warisan Budaya',
+  sub:'Sub-CPMK-12 — Mengevaluasi upaya pelestarian dan manajemen warisan budaya serta peran pemangku kepentingan. (C5)',
+  bk:'BK-4', cpl:'CPL-2 (CPL-1 pendukung)', bab:'Bab 14',
+  tujuan:['Menjelaskan tiga jalur pelestarian: pelindungan, pengembangan, dan pemanfaatan.','Memetakan pemangku kepentingan beserta kewenangannya.','Menilai satu kasus pengelolaan warisan budaya dan mengusulkan perbaikan.'],
+  poin:[
+    {h:'Tiga jalur menurut UU 11/2010', d:'Pelindungan (penyelamatan, pengamanan, zonasi, pemeliharaan, pemugaran), pengembangan (penelitian, revitalisasi, adaptasi), dan pemanfaatan (untuk agama, sosial, pendidikan, ilmu pengetahuan, teknologi, kebudayaan, dan pariwisata).'},
+    {h:'Siapa yang berwenang', d:'Pemerintah pusat dan daerah, Tim Ahli Cagar Budaya, juru pelihara, pemilik dan penguasa objek, komunitas adat, akademisi, dan pelaku industri pariwisata. Kewenangannya berbeda; peranya juga berbeda.'},
+    {h:'Takbenda menuntut cara lain', d:'Bangunan dilindungi dengan pemugaran; tradisi lisan dilindungi dengan memastikan ada yang masih mengajarkannya. Pewarisan adalah bentuk pelindungan yang sesungguhnya bagi WBTb.'},
+    {h:'Pariwisata sebagai pisau bermata dua', d:'Kunjungan menghasilkan dana dan perhatian; kunjungan juga menghasilkan keausan, sampah, dan tekanan harga. Daya dukung perlu dihitung sebelum promosi dilancarkan, bukan sesudah.'}],
+  media:[
+    {app:'Laman WBTb Kemendikbudristek', tipe:'Penelusuran daftar', prompt:'Telusuri penetapan WBTb Kepulauan Riau. Catat nama, domain, dan tahun penetapan; bandingkan dengan yang Anda kenal di lapangan.'},
+    {app:'Mentimeter', tipe:'2×2 Grid', prompt:'Tempatkan lima pemangku kepentingan pada grid: sumbu X kewenangan rendah–tinggi, sumbu Y kepentingan rendah–tinggi.'},
+    {app:'Quizizz', tipe:'Kuis 10 soal', prompt:'Jalur pelestarian dan kelembagaan — gunakan Bank Soal Pertemuan 14.'}],
+  tugas:'PT: Menganalisis satu kasus pengelolaan dan mengusulkan tiga perbaikan. BM: Menyelesaikan draf naskah Proyek 2.'},
+
+{ w:15, blok:2, judul:'Storytelling dan Struktur Naskah Interpretasi',
+  sub:'Sub-CPMK-13 — Merancang naskah narasi interpretasi budaya dengan teknik storytelling yang tepat. (C6)',
+  bk:'BK-8', cpl:'CPL-1 (CPL-6 penunjang)', bab:'Bab 15',
+  tujuan:['Membedakan informasi dan interpretasi.','Menyusun naskah dengan tema besar, pembuka, tiga simpul, dan penutup.','Menyesuaikan naskah dengan jenis audiens dan waktu yang tersedia.'],
+  poin:[
+    {h:'Interpretasi, bukan penyampaian data', d:'Tilden merumuskannya sejak 1957: interpretasi adalah kegiatan mengungkap makna dan hubungan, bukan sekadar menyampaikan keterangan faktual. Angka tahun adalah bahan; makna adalah hasil olahannya.'},
+    {h:'Satu tema, bukan banyak pokok', d:'Tema dinyatakan dalam satu kalimat lengkap yang dapat dibawa pulang pengunjung. “Masjid ini dibangun 1832” bukan tema. “Pulau kecil ini pernah menjadi tempat bahasa kita ditata” adalah tema.'},
+    {h:'Struktur lima bagian', d:'Pembuka yang menahan langkah, penempatan konteks, tiga simpul cerita yang masing-masing bertumpu pada satu objek yang terlihat, penutup yang mengikat, dan ajakan kecil yang masuk akal.'},
+    {h:'Menyesuaikan audiens', d:'Anak sekolah, wisatawan mancanegara, peziarah, dan rombongan pensiunan menuntut kecepatan, kosakata, dan penekanan yang berbeda. Naskah yang sama dibawakan berbeda — itu keterampilan, bukan ketidakkonsistenan.'}],
+  media:[
+    {app:'Penyusun Kerangka Naskah (alat pada media ini)', tipe:'Pengisi kerangka', prompt:'Susun kerangka naskah Proyek 2 Anda, lalu salin hasilnya ke dokumen kelompok.'},
+    {app:'Mentimeter', tipe:'Open ended', prompt:'Tulis tema besar naskah kelompok Anda dalam SATU kalimat lengkap. Kelas akan menilai mana yang sudah berupa tema dan mana yang masih berupa pokok bahasan.'},
+    {app:'Perekam suara ponsel', tipe:'Latihan mandiri', prompt:'Rekam pembacaan naskah Anda selama 3 menit. Dengarkan ulang, tandai kalimat yang terdengar seperti membaca ensiklopedia, lalu tulis ulang.'}],
+  tugas:'PT: Menyelesaikan naskah interpretasi. BM: Berlatih membawakan naskah dan mengukur waktunya.'},
+
+{ w:16, blok:2, judul:'Proyek 2 — Heritage Interpretation Showcase',
+  sub:'Sub-CPMK-14 — Menyajikan interpretasi warisan budaya dalam simulasi pemanduan wisata. (C6) — Evaluasi Akhir Semester',
+  bk:'BK-5, BK-6, BK-8', cpl:'CPL-6 (CPL-1 dan CPL-4 pendukung)', bab:'Bab 16',
+  tujuan:['Membawakan interpretasi selama 10–12 menit dengan tema yang jelas.','Menjawab pertanyaan audiens secara jujur, termasuk mengakui yang belum diketahui.','Menyerahkan naskah, daftar sumber, dan media pendukung.'],
+  poin:[
+    {h:'Yang dinilai', d:'Ketepatan isi dan sumber, kejelasan tema, keterampilan membawakan, penghormatan pada pemangku budaya, dan kelengkapan berkas.'},
+    {h:'Berkas yang diserahkan', d:'Naskah lengkap, daftar sumber beserta halaman, catatan wawancara bila ada, dan satu media pendukung (foto, peta, atau benda peraga).'},
+    {h:'Menjawab yang tidak diketahui', d:'“Saya belum menemukan keterangan yang dapat saya pertanggungjawabkan; akan saya telusuri dan kabari” adalah jawaban yang benar. Mengarang jawaban adalah kesalahan yang paling merugikan profesi ini.'},
+    {h:'Setelah kelas', d:'Naskah yang baik dapat diajukan kepada pengelola situs setempat. Sebagian karya mahasiswa memang berakhir dipakai — itu tujuan mata kuliah ini.'}],
+  media:[
+    {app:'Mentimeter', tipe:'Penilaian sejawat', prompt:'Setelah tiap penampilan, beri skor 1–5 untuk kejelasan tema, ketepatan isi, dan keterampilan membawakan; tambahkan satu kalimat saran.'},
+    {app:'Canva / Google Slides', tipe:'Media pendukung', prompt:'Siapkan maksimal 5 salindia atau satu lembar peraga. Salindia bukan naskah — ia hanya penopang.'},
+    {app:'Perekam video', tipe:'Dokumentasi', prompt:'Rekam penampilan untuk bahan refleksi diri dan berkas portofolio.'}],
+  tugas:'Penilaian: Rubrik analitik Proyek 2 (lihat RPS bagian D). Bobot 30%.'}
+];
+
+const KUIS = [
+ {w:1,q:'Menurut Koentjaraningrat, kebudayaan mencakup tiga wujud. Upacara tepuk tepung tawar yang sedang berlangsung termasuk wujud…',o:['Gagasan','Aktivitas','Artefak','Sistem nilai'],a:1,e:'Upacara yang sedang berlangsung adalah pola tindakan berpola dari manusia dalam masyarakat — wujud aktivitas. Tepak sirih yang dipakai di dalamnya adalah artefak; kesantunan yang mendasarinya adalah gagasan.'},
+ {w:1,q:'Manakah yang BUKAN termasuk tujuh unsur universal kebudayaan?',o:['Sistem religi','Sistem mata pencaharian','Sistem transportasi udara','Organisasi sosial'],a:2,e:'Tujuh unsur universal adalah bahasa, sistem pengetahuan, organisasi sosial, sistem peralatan dan teknologi, sistem mata pencaharian, sistem religi, dan kesenian.'},
+ {w:2,q:'Frasa Bhinneka Tunggal Ika berasal dari…',o:['Kakawin Sutasoma karya Mpu Tantular','Nagarakretagama karya Mpu Prapanca','Prasasti Kedukan Bukit','Hikayat Raja-raja Pasai'],a:0,e:'Frasa itu berasal dari Kakawin Sutasoma yang ditulis Mpu Tantular pada masa Majapahit, dalam konteks hidup berdampingan pemeluk Siwa dan Buddha.'},
+ {w:3,q:'Nekara perunggu merupakan penanda material masa…',o:['Berburu dan meramu','Bercocok tanam','Perundagian','Megalitik awal'],a:2,e:'Nekara, kapak corong, dan bejana perunggu menandai masa perundagian, ketika keterampilan pengecoran logam sudah dikuasai kelompok tukang khusus.'},
+ {w:3,q:'Pernyataan yang tepat tentang tradisi megalitik Nusantara adalah…',o:['Berlangsung hanya pada satu periode sebelum masa logam','Merupakan tradisi yang muncul pada masa berbeda dan di sebagian daerah bertahan sampai abad ke-20','Selalu berkaitan dengan kerajaan Hindu-Buddha','Hanya ditemukan di Pulau Jawa'],a:1,e:'Megalitik adalah tradisi, bukan periode. Di Sumba, Toraja, dan Nias praktik yang berkaitan dengannya masih hidup jauh sampai masa modern.'},
+ {w:4,q:'Bentuk berundak pada punden prasejarah kemudian terbaca lagi pada…',o:['Denah masjid kuno bersoko guru','Susunan candi dan halaman pura','Tata kota kolonial','Bentuk nisan Aceh'],a:1,e:'Gagasan pemujaan leluhur pada punden berundak dipakai ulang pada susunan candi dan halaman pura — contoh akulturasi berupa bentuk lama dengan kosakata baru.'},
+ {w:4,q:'Perbedaan pokok pola kekuasaan Sriwijaya dan Majapahit terletak pada…',o:['Agama resmi kerajaan','Sumber kekayaan: lalu lintas selat dibanding hasil tanah','Penggunaan bahasa Melayu','Bentuk candi yang dibangun'],a:1,e:'Sriwijaya bertumpu pada penguasaan selat dan pelabuhan, Majapahit pada penguasaan lahan dan upeti. Perbedaan itu melahirkan bentuk budaya yang berbeda.'},
+ {w:5,q:'Menara Masjid Kudus menjadi contoh terkenal akulturasi karena…',o:['Dibangun dengan bahan dari Timur Tengah','Berbentuk bangunan bergaya candi yang dipakai untuk keperluan Islam','Merupakan menara tertinggi di Jawa','Dibangun pada masa kolonial'],a:1,e:'Menara itu memakai bentuk bangunan bata bergaya masa sebelumnya untuk keperluan baru — bentuk lama, isi baru.'},
+ {w:5,q:'Ciri khas masjid kuno Nusantara adalah…',o:['Kubah bawang dan menara tinggi','Atap tumpang bersusun, denah bujur sangkar, dan empat soko guru','Denah lingkaran dengan mihrab di tengah','Dinding kaca patri bermotif kaligrafi'],a:1,e:'Kubah bawang baru umum dipakai pada masa kemudian. Masjid kuno Nusantara berciri atap tumpang, denah bujur sangkar, dan empat soko guru.'},
+ {w:6,q:'Gurindam Dua Belas karya Raja Ali Haji memakai bentuk…',o:['Empat baris berima a-a-a-a','Dua baris dengan hubungan sebab dan akibat','Prosa berirama tanpa rima','Delapan baris berima silang'],a:1,e:'Gurindam terdiri atas dua baris: baris pertama menyatakan syarat atau sebab, baris kedua menyatakan akibatnya.'},
+ {w:6,q:'Suluk dalam kesusastraan masa Islam Nusantara berisi…',o:['Silsilah raja-raja','Ajaran tasawuf dengan bahasa perlambang','Undang-undang kesultanan','Catatan perjalanan dagang'],a:1,e:'Suluk membicarakan hubungan manusia dengan Tuhan memakai bahasa perlambang — bentuk yang mempermudah tasawuf bertemu alam pikiran setempat.'},
+ {w:7,q:'Menurut UU Nomor 11 Tahun 2010, salah satu kriteria benda cagar budaya adalah berusia sekurang-kurangnya…',o:['25 tahun','50 tahun','75 tahun','100 tahun'],a:1,e:'Kriterianya: berusia 50 tahun atau lebih, mewakili masa gaya paling singkat 50 tahun, memiliki arti khusus, dan bernilai budaya bagi penguatan jati diri bangsa.'},
+ {w:7,q:'Tari, tradisi lisan, dan kemahiran kerajinan dilindungi melalui jalur…',o:['Penetapan cagar budaya menurut UU 11/2010','Penetapan warisan budaya takbenda, terpisah dari UU 11/2010','Hak kekayaan intelektual saja','Peraturan daerah tentang bangunan'],a:1,e:'UU 11/2010 mengatur objek kebendaan. Warisan budaya takbenda berjalan pada jalur penetapan tersendiri oleh kementerian dan pengusulan ke UNESCO.'},
+ {w:8,q:'Ciri rancangan rute wisata tematik yang baik adalah…',o:['Memuat sebanyak mungkin titik terkenal','Memiliki satu tema pengikat yang dapat dinyatakan dalam satu kalimat','Menempuh jarak sejauh mungkin','Menghindari titik yang belum populer'],a:1,e:'Tanpa tema pengikat, rute hanya menjadi daftar tempat. Tema menentukan titik mana yang masuk dan dalam urutan apa.'},
+ {w:9,q:'Tuhfat al-Nafis ditulis oleh…',o:['Raja Ali Haji','Hamzah Fansuri','Mpu Prapanca','Abdullah bin Abdul Kadir Munsyi'],a:0,e:'Tuhfat al-Nafis ditulis Raja Ali Haji pada abad ke-19, memuat silsilah dan peristiwa dunia Melayu-Bugis, terutama peran keluarganya sendiri.'},
+ {w:9,q:'Perjanjian London 1824 berakibat pada dunia Melayu berupa…',o:['Berdirinya Kesultanan Johor','Pembelahan wilayah menjadi lingkup Britania dan Belanda','Pemindahan ibu kota ke Lingga','Pengakuan Penyengat sebagai pusat ilmu'],a:1,e:'Perjanjian itu membelah dunia Melayu yang sebelumnya satu kesatuan politik dan budaya; Riau-Lingga berada di sisi Belanda.'},
+ {w:10,q:'Karya Raja Ali Haji yang menjadi rintisan kamus dan tata bahasa Melayu adalah…',o:['Gurindam Dua Belas','Bustanul Katibin','Kitab Pengetahuan Bahasa','Silsilah Melayu dan Bugis'],a:2,e:'Kitab Pengetahuan Bahasa adalah rintisan kamus dan tata bahasa Melayu — alasan pokok gelar Pahlawan Nasional yang diberikan pada 2004.'},
+ {w:10,q:'Makyong adalah bentuk…',o:['Seni pertunjukan teater tari bertopeng dari rumpun Melayu','Tarian penyambutan tamu di istana','Nyanyian pengiring pantun berbalas','Upacara adat perkawinan'],a:0,e:'Makyong adalah teater tari dengan lakon, iringan musik, dan sebagian tokoh bertopeng; ia tercatat dalam daftar warisan budaya takbenda UNESCO melalui jalur bersama.'},
+ {w:11,q:'Foto sebuah upacara yang diambil pada 1935 oleh pegawai kolonial tergolong sumber…',o:['Primer','Sekunder','Tersier','Bukan sumber sejarah'],a:0,e:'Foto sezaman adalah sumber primer. Bahwa pembuatnya pegawai kolonial adalah persoalan sudut pandang yang harus disebut, bukan alasan menolaknya sebagai sumber.'},
+ {w:11,q:'Pertanyaan wawancara yang paling tepat di antara berikut adalah…',o:['"Tradisi ini sudah mulai punah, ya?"','"Bisa Bapak ceritakan bagaimana tradisi ini dijalankan saat Bapak masih muda?"','"Apakah generasi muda sekarang sudah tidak peduli?"','"Menurut Bapak tradisi ini lebih baik dulu atau sekarang?"'],a:1,e:'Pertanyaan yang baik terbuka dan tidak memuat jawabannya sendiri. Tiga pilihan lain sudah menuntun narasumber ke kesimpulan tertentu.'},
+ {w:12,q:'Peran Orang Laut pada masa kesultanan Melayu terutama sebagai…',o:['Pedagang pelabuhan','Penjaga selat dan pemilik pengetahuan perairan','Pembuat kain songket','Juru tulis istana'],a:1,e:'Orang Laut menguasai pengetahuan arus, pulau, dan jalur — kekuatan yang membuat kesultanan dapat mengamankan selat.'},
+ {w:12,q:'Jabatan Yang Dipertuan Muda pada Kesultanan Riau umumnya dipegang oleh keluarga…',o:['Melayu','Bugis','Tionghoa','Orang Laut'],a:1,e:'Jabatan itu dipegang keluarga Bugis, sementara Yang Dipertuan Besar dari keluarga Melayu — tatanan yang diceritakan panjang dalam Tuhfat al-Nafis.'},
+ {w:13,q:'Pernyataan yang tepat tentang autentisitas dalam penyajian budaya adalah…',o:['Budaya yang autentik adalah budaya yang tidak pernah berubah','Yang dipersoalkan bukan perubahan, melainkan siapa yang memutuskan perubahan itu','Perubahan apa pun merusak keautentikan','Autentisitas hanya berlaku bagi benda, bukan bagi tradisi'],a:1,e:'Kebudayaan selalu berubah. Perubahan yang diputuskan pemangku budaya berbeda kedudukannya dari perubahan yang dipaksakan pasar.'},
+ {w:13,q:'Seorang pemandu diminta wisatawan memegang benda pusaka yang sedang disucikan. Tindakan yang tepat adalah…',o:['Mengizinkan karena wisatawan telah membayar','Menolak dan menjelaskan aturan pemangku budaya sebelum pelanggaran terjadi','Menanyakan kepada penyelenggara acara','Mengizinkan asal tidak difoto'],a:1,e:'Pemandu berdiri di antara tamu dan tuan rumah. Ia menyampaikan aturan tuan rumah lebih dahulu, bukan meminta maaf setelahnya.'},
+ {w:14,q:'Bentuk pelindungan yang paling sesuai bagi warisan budaya takbenda adalah…',o:['Pemugaran bangunan','Zonasi kawasan','Memastikan pewarisan keterampilan kepada generasi berikutnya','Penyimpanan di museum'],a:2,e:'Tradisi lisan dan kemahiran hidup di dalam manusia. Ia dilindungi dengan memastikan masih ada yang mengajarkan dan mempelajarinya.'},
+ {w:14,q:'Menurut UU 11/2010, pemanfaatan cagar budaya untuk pariwisata…',o:['Dilarang sama sekali','Diperbolehkan sebagai salah satu bentuk pemanfaatan','Hanya boleh dilakukan pemerintah pusat','Hanya berlaku bagi cagar budaya peringkat nasional'],a:1,e:'Pemanfaatan meliputi kepentingan agama, sosial, pendidikan, ilmu pengetahuan, teknologi, kebudayaan, dan pariwisata — dengan syarat tidak merusak.'},
+ {w:15,q:'Menurut prinsip interpretasi Tilden, kegiatan interpretasi adalah…',o:['Menyampaikan keterangan faktual selengkap mungkin','Mengungkap makna dan hubungan, bukan sekadar menyampaikan informasi','Menghibur pengunjung dengan cerita menarik','Menjual produk wisata melalui cerita'],a:1,e:'Tilden merumuskannya pada 1957: interpretasi mengungkap makna dan hubungan. Data adalah bahan; makna adalah hasil olahannya.'},
+ {w:15,q:'Manakah yang sudah berupa TEMA naskah interpretasi, bukan sekadar pokok bahasan?',o:['Sejarah Pulau Penyengat','Masjid Raya Sultan Riau','Pulau kecil ini pernah menjadi tempat bahasa kita ditata','Bangunan bersejarah di Kepulauan Riau'],a:2,e:'Tema dinyatakan dalam satu kalimat lengkap yang dapat dibawa pulang pengunjung. Tiga pilihan lain masih berupa label pokok bahasan.'},
+ {w:16,q:'Ketika audiens menanyakan hal yang tidak diketahui pemandu, tindakan yang benar adalah…',o:['Menjawab dengan perkiraan yang masuk akal','Mengalihkan pertanyaan ke topik lain','Menyatakan belum menemukan keterangan yang dapat dipertanggungjawabkan dan menawarkan menelusurinya','Merujuk pada cerita yang beredar di masyarakat sebagai fakta'],a:2,e:'Mengarang jawaban adalah kesalahan yang paling merugikan profesi ini. Mengakui batas pengetahuan justru membangun kepercayaan.'},
+ {w:16,q:'Berkas yang wajib diserahkan pada Proyek 2 meliputi…',o:['Naskah saja','Naskah dan salindia','Naskah, daftar sumber beserta halaman, dan satu media pendukung','Rekaman video saja'],a:2,e:'Kelengkapan berkas termasuk unsur penilaian: naskah lengkap, daftar sumber beserta halaman, catatan wawancara bila ada, dan satu media pendukung.'}
+];
+
+const PUSTAKA = [
+ 'Koentjaraningrat. (2009). <i>Pengantar Ilmu Antropologi</i> (Edisi Revisi). Jakarta: Rineka Cipta.',
+ 'Poesponegoro, M. D., &amp; Notosusanto, N. (Eds.). (2008). <i>Sejarah Nasional Indonesia</i> Jilid I–VI (Edisi Pemutakhiran). Jakarta: Balai Pustaka.',
+ 'Soekmono, R. (1973). <i>Pengantar Sejarah Kebudayaan Indonesia</i> Jilid 1–3. Yogyakarta: Kanisius.',
+ 'Raja Ali Haji. (1982). <i>Tuhfat al-Nafis</i> (Terjemahan). Kuala Lumpur: Fajar Bakti.',
+ 'Republik Indonesia. (2010). <i>Undang-Undang Nomor 11 Tahun 2010 tentang Cagar Budaya</i>.',
+ 'Timothy, D. J. (2021). <i>Cultural Heritage and Tourism: An Introduction</i> (2nd ed.). Bristol: Channel View Publications.',
+ 'Smith, M. K. (2003). <i>Issues in Cultural Tourism Studies</i>. London: Routledge.',
+ 'Reisinger, Y. (2009). <i>International Tourism: Cultures and Behavior</i>. Oxford: Butterworth-Heinemann.',
+ 'Tilden, F. (1957). <i>Interpreting Our Heritage</i>. Chapel Hill: University of North Carolina Press.',
+ 'Zaitun. (2020). Nilai-nilai pendidikan dalam Gurindam Dua Belas karya Raja Ali Haji. <i>Jurnal Pendidikan</i>.',
+ 'Kemendikbudristek. <i>Warisan Budaya Takbenda Indonesia</i>. Daftar penetapan nasional.'
+];
+
+/* --------- Tambahan latihan modul (melengkapi bank soal jadi 2 butir per modul) --------- */
+const TAMBAHAN = [
+ { w:2, q:'Cara paling tepat membandingkan dua kelompok etnik adalah…',
+   o:['Menilai mana yang lebih maju','Membandingkan unsur yang setara, misalnya rumah adat dengan rumah adat','Menghitung jumlah penuturnya','Melihat mana yang lebih dikenal wisatawan'], a:1,
+   e:'Membandingkan "kemajuan" antar-etnik adalah kekeliruan metodologis sekaligus kekeliruan etis. Bandingkan unsur yang setara.' },
+ { w:8, q:'Sebuah kelompok menyusun rute dengan tujuh titik yang semuanya menarik, tetapi tanpa satu kalimat tema. Catatan penguji yang paling tepat adalah…',
+   o:['Tambahkan lebih banyak titik agar lengkap','Rute masih berupa daftar tempat, bukan satu cerita','Ganti moda transportasinya','Kurangi jumlah titik menjadi tiga'], a:1,
+   e:'Tema pengikat menentukan titik mana yang masuk dan dalam urutan apa. Tanpa itu, rute hanya daftar tempat.' },
+];
+
+/* Tautan TPB/SDGs untuk MK Sejarah Kebudayaan Indonesia (PW104)
+   Sumber: Kementerian PPN/Bappenas (2019), Roadmap of SDGs Indonesia: A Highlight;
+   Perpres 59/2017; PBB (2015) Transforming Our World: The 2030 Agenda. */
+
+const SDG_UMUM =
+  'Mata kuliah ini ditautkan dengan Tujuan Pembangunan Berkelanjutan (TPB/SDGs) sebagaimana dijalankan Indonesia ' +
+  'melalui Peraturan Presiden Nomor 59 Tahun 2017 dan Peta Jalan TPB Indonesia yang disusun Bappenas. ' +
+  'Tautan terkuatnya terletak pada Sasaran 11.4 (melindungi dan menjaga warisan budaya dan alam), ' +
+  'Sasaran 8.9 (pariwisata berkelanjutan yang menciptakan lapangan kerja serta memajukan budaya dan produk lokal), ' +
+  'Sasaran 12.b (alat pantau dampak pariwisata berkelanjutan), serta Sasaran 4.7 (pendidikan yang menumbuhkan ' +
+  'apresiasi atas sumbangan keragaman budaya bagi pembangunan berkelanjutan). Tautan tidak dipasang pada setiap ' +
+  'pertemuan, melainkan pada tujuh pertemuan yang substansinya memang menyentuhnya, sehingga TPB tidak menjadi ' +
+  'tempelan administratif.';
+
+/* kunci = minggu pada RPS Varian A dan nomor pertemuan pada media serta deck */
+const SDG = {
+  2:  { kode: ['TPB 4.7', 'TPB 10.2'],
+        ket: 'Peta Jalan TPB Indonesia menyebut Indonesia sebagai negara kepulauan dengan ratusan kelompok budaya. ' +
+             'Memetakan keberagaman tanpa menyusun peringkat adalah bentuk paling dasar dari Sasaran 10.2 — ' +
+             'pemberdayaan dan inklusi sosial tanpa memandang asal usul — sekaligus Sasaran 4.7.' },
+  7:  { kode: ['TPB 11.4', 'TPB 16.6'],
+        ket: 'Sasaran 11.4 mengamanatkan pelindungan warisan budaya dan alam. UU 11/2010 dan penetapan Warisan ' +
+             'Budaya Takbenda adalah perangkat nasionalnya; penetapan berjenjang dari kabupaten/kota sampai ' +
+             'nasional menyentuh Sasaran 16.6 tentang kelembagaan yang efektif dan akuntabel.' },
+  8:  { kode: ['TPB 8.9', 'TPB 11.4'],
+        ket: 'Rute wisata tematik adalah wujud langsung Sasaran 8.9: pariwisata yang memajukan budaya dan produk ' +
+             'lokal. Daftar periksa kelayakan rute memaksa mahasiswa menghitung daya dukung, bukan hanya daya tarik.' },
+  12: { kode: ['TPB 10.2', 'TPB 11.4'],
+        ket: 'Menyebut sumbangan Melayu, Bugis, Tionghoa, dan Orang Laut secara setara — termasuk kelompok yang ' +
+             'kerap hilang dari cerita resmi — adalah penerapan Sasaran 10.2 pada pekerjaan interpretasi.' },
+  13: { kode: ['TPB 8.9', 'TPB 12.b'],
+        ket: 'Sasaran 12.b meminta dikembangkannya alat pantau dampak pariwisata berkelanjutan. Prinsip penyajian ' +
+             'yang dirumuskan kelas pada pertemuan ini adalah bentuk sederhana alat pantau itu, dipakai sebelum ' +
+             'kerusakan terjadi, bukan sesudah.' },
+  14: { kode: ['TPB 11.4', 'TPB 17.17'],
+        ket: 'Peta Jalan TPB Indonesia menegaskan bahwa sasaran hanya tercapai melalui kolaborasi banyak pemangku ' +
+             'kepentingan. Pemetaan pemangku kepentingan pada pertemuan ini adalah latihan Sasaran 17.17 — ' +
+             'kemitraan pemerintah, dunia usaha, dan masyarakat.' },
+  16: { kode: ['TPB 4.7', 'TPB 8.9'],
+        ket: 'Simulasi pemanduan menilai apakah mahasiswa mampu menyampaikan warisan budaya secara akurat dan ' +
+             'menghormati pemangku budaya — inti Sasaran 4.7 dan Sasaran 8.9 pada tingkat praktik.' },
+};
+
+/* Varian B menggabungkan dua pokok bahasan dalam satu sesi, sehingga minggunya bergeser */
+const SDG_B = {
+  1:  SDG[2],
+  7:  SDG[7],
+  8:  SDG[8],
+  12: SDG[12],
+  14: { kode: ['TPB 8.9', 'TPB 12.b', 'TPB 11.4', 'TPB 17.17'],
+        ket: SDG[13].ket + ' Pada sesi yang sama, pemetaan pemangku kepentingan melatih Sasaran 17.17 dan ' +
+             'melengkapi Sasaran 11.4 tentang pelindungan warisan.' },
+  16: SDG[16],
+};
+
+/* Lampiran E.4 — baris tabel: BK · Sub-CPMK · Sasaran TPB · Bentuk penerapan */
+const SDG_E4 = [
+  ['BK-3', 'Sub-CPMK-2', 'TPB 4.7 dan 10.2',
+   'Memetakan keberagaman etnik dan rumpun budaya Nusantara dengan membandingkan unsur yang setara, bukan menyusun peringkat kemajuan antar-kelompok.'],
+  ['BK-2, BK-4', 'Sub-CPMK-6', 'TPB 11.4 dan 16.6',
+   'Membedakan jalur cagar budaya (UU 11/2010) dari jalur warisan budaya takbenda, serta menelusuri penetapan berjenjang dari kabupaten/kota sampai nasional.'],
+  ['BK-2, BK-3, BK-4, BK-7', 'Sub-CPMK-7', 'TPB 8.9 dan 11.4',
+   'Merancang rute wisata tematik beserta perhitungan kelayakan dan daya dukungnya sebagai produk pariwisata yang memajukan budaya setempat.'],
+  ['BK-5', 'Sub-CPMK-10', 'TPB 10.2 dan 11.4',
+   'Menyebut sumbangan Melayu, Bugis, Tionghoa, dan Orang Laut secara setara dalam keterangan objek, termasuk kelompok yang terpinggir dari cerita resmi.'],
+  ['BK-6', 'Sub-CPMK-11', 'TPB 8.9 dan 12.b',
+   'Merumuskan prinsip penyajian warisan budaya sebagai alat pantau sederhana atas dampak pariwisata terhadap pemilik budaya.'],
+  ['BK-4', 'Sub-CPMK-12', 'TPB 11.4 dan 17.17',
+   'Memetakan pemangku kepentingan pelestarian beserta kewenangannya, dan menilai satu kasus pengelolaan warisan budaya.'],
+  ['BK-5, BK-6, BK-8', 'Sub-CPMK-14', 'TPB 4.7 dan 8.9',
+   'Menyajikan interpretasi warisan budaya secara akurat, tertelusur, dan menghormati pemangku budaya dalam simulasi pemanduan.'],
+];
+
+const SDG_CATATAN =
+  'Catatan ketelitian rujukan. Peta Jalan TPB Indonesia (Bappenas, 2019) edisi A Highlight memuat indikator ' +
+  'terpilih untuk empat belas tujuan; indikator yang dipilihnya untuk Tujuan 11 adalah 11.1.1 tentang hunian layak, ' +
+  'bukan 11.4 tentang warisan budaya, dan Tujuan 12 serta 16 tidak memperoleh bab indikator tersendiri. Karena itu ' +
+  'rumusan sasaran 11.4, 8.9, 12.b, dan 4.7 pada tabel ini dirujuk langsung kepada dokumen Agenda 2030 ' +
+  '(Resolusi Majelis Umum PBB A/RES/70/1), sedangkan Peta Jalan Bappenas dirujuk untuk kerangka pelaksanaan ' +
+  'nasional: amanat Perpres 59/2017, keterkaitan antartujuan (Bab 3), dan penegasan bahwa pencapaian sasaran ' +
+  'menuntut kolaborasi lintas pemangku kepentingan. Satu temuan Peta Jalan yang langsung terpakai di kelas ada ' +
+  'pada pembahasan Tujuan 11 halaman 76: peralihan dari budaya rumah berpekarangan ke budaya hunian vertikal ' +
+  'disebut menimbulkan "hilangnya hubungan antara tanah dan kehidupan" — bahan yang tepat untuk pertemuan ' +
+  'tentang perubahan cara hidup masa kolonial dan kontemporer.';
+
+const SDG_PUSTAKA = [
+  'Kementerian PPN/Bappenas. (2019). Roadmap of SDGs Indonesia: A Highlight. Jakarta: Kementerian Perencanaan Pembangunan Nasional/Badan Perencanaan Pembangunan Nasional.',
+  'Peraturan Presiden Republik Indonesia Nomor 59 Tahun 2017 tentang Pelaksanaan Pencapaian Tujuan Pembangunan Berkelanjutan.',
+  'Perserikatan Bangsa-Bangsa. (2015). Transforming Our World: The 2030 Agenda for Sustainable Development (Resolusi Majelis Umum A/RES/70/1).',
+];
+
+
+TAMBAHAN.forEach(function(t){ KUIS.push({w:t.w,q:t.q,o:t.o,a:t.a,e:t.e}); });
+KUIS.sort(function(a,c){return a.w-c.w;});
+var cur='home';
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function el(id){return document.getElementById(id);}
+function toast(m){var t=el('toast');t.textContent=m;t.classList.add('on');setTimeout(function(){t.classList.remove('on');},1500);}
+function copy(txt){
+  try{
+    var ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.left='-9999px';
+    document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);
+    toast('Teks disalin');
+  }catch(e){toast('Salin manual: teks ada di kotak putus-putus');}
+}
+function buildRail(){
+  var h='';
+  h+='<div class="grp">Mulai</div>';
+  h+='<button data-go="home"><span class="n">&#9679;</span> Beranda</button>';
+  h+='<button data-go="panduan"><span class="n">&#9679;</span> Panduan pemakaian</button>';
+  h+='<div class="grp">Blok 1 &middot; Nusantara</div>';
+  PERTEMUAN.filter(function(p){return p.blok===1;}).forEach(function(p){
+    h+='<button data-go="p'+p.w+'"><span class="n">'+p.w+'</span> '+esc(p.judul)+'</button>';});
+  h+='<div class="grp">Blok 2 &middot; Kepulauan Riau</div>';
+  PERTEMUAN.filter(function(p){return p.blok===2;}).forEach(function(p){
+    h+='<button data-go="p'+p.w+'"><span class="n">'+p.w+'</span> '+esc(p.judul)+'</button>';});
+  h+='<div class="grp">Alat bantu</div>';
+  h+='<button data-go="t-wujud"><span class="n">&#9670;</span> Penentu Wujud Budaya</button>';
+  h+='<button data-go="t-sumber"><span class="n">&#9670;</span> Penyaring Kesahihan Sumber</button>';
+  h+='<button data-go="t-status"><span class="n">&#9670;</span> Penelusur Status Warisan</button>';
+  h+='<button data-go="t-naskah"><span class="n">&#9670;</span> Penyusun Kerangka Naskah</button>';
+  h+='<button data-go="t-rute"><span class="n">&#9670;</span> Pemeriksa Kelayakan Rute</button>';
+  h+='<div class="grp">Penilaian &amp; rujukan</div>';
+  h+='<button data-go="kuis"><span class="n">&#9670;</span> Bank Soal &amp; Uji Pemahaman</button>';
+  h+='<button data-go="sdg"><span class="n">&#9670;</span> Tautan TPB/SDGs</button>';
+  h+='<button data-go="pustaka"><span class="n">&#9670;</span> Daftar Pustaka</button>';
+  el('rail').innerHTML=h;
+  Array.prototype.forEach.call(el('rail').querySelectorAll('button'),function(b){
+    b.onclick=function(){go(b.getAttribute('data-go'));};});
+}
+function go(id){
+  cur=id;
+  Array.prototype.forEach.call(el('rail').querySelectorAll('button'),function(b){
+    b.classList.toggle('on',b.getAttribute('data-go')===id);});
+  el('rail').classList.remove('show');
+  var m=el('main');
+  if(id==='home')m.innerHTML=pgHome();
+  else if(id==='panduan')m.innerHTML=pgPanduan();
+  else if(id==='kuis')m.innerHTML=pgKuis();
+  else if(id==='pustaka')m.innerHTML=pgPustaka();
+  else if(id==='sdg')m.innerHTML=pgSDG();
+  else if(id.charAt(0)==='t')m.innerHTML=pgTool(id);
+  else m.innerHTML=pgPert(parseInt(id.slice(1),10));
+  wire();window.scrollTo(0,0);
+  try{location.hash=id;}catch(e){}
+}
+function wire(){
+  Array.prototype.forEach.call(document.querySelectorAll('.poin>button'),function(b){
+    b.onclick=function(){b.parentNode.classList.toggle('open');};});
+  Array.prototype.forEach.call(document.querySelectorAll('[data-copy]'),function(b){
+    b.onclick=function(){copy(b.getAttribute('data-copy'));};});
+  Array.prototype.forEach.call(document.querySelectorAll('[data-go]'),function(b){
+    if(b.closest('#rail'))return; b.onclick=function(){go(b.getAttribute('data-go'));};});
+  if(cur==='kuis')wireKuis();
+  if(cur.charAt(0)==='t')wireTool(cur);
+}
+/* ---------- halaman ---------- */
+function pgHome(){
+  return '<div class="hero"><h2>Media Pembelajaran Digital</h2>'+
+   '<p>Sejarah Kebudayaan Indonesia &middot; PW104 &middot; 2 SKS &middot; Semester 1 &middot; D3 Perjalanan Wisata, Politeknik Bintan Cakrawala. '+
+   'Berisi enam belas pertemuan, lima alat bantu interaktif, dan bank soal. Berkas ini berjalan tanpa sambungan internet &mdash; '+
+   'cukup dibuka pada peramban mana pun, termasuk ponsel.</p></div>'+
+   '<h3>Mulai dari mana</h3>'+
+   '<div class="grid">'+
+   '<button class="tile" data-go="panduan"><b>Panduan pemakaian</b><span>Cara memakai berkas ini di kelas dan di luar kelas, beserta alur satu pertemuan.</span></button>'+
+   '<button class="tile" data-go="p1"><b>Pertemuan 1</b><span>Apa yang kita sebut kebudayaan &mdash; titik masuk seluruh mata kuliah.</span></button>'+
+   '<button class="tile" data-go="t-wujud"><b>Penentu Wujud Budaya</b><span>Alat latihan membedakan gagasan, aktivitas, dan artefak.</span></button>'+
+   '<button class="tile" data-go="kuis"><b>Uji Pemahaman</b><span>'+KUIS.length+' soal pilihan ganda beserta pembahasannya.</span></button>'+
+   '</div>'+
+   '<h3>Susunan isi</h3>'+
+   '<table class="r"><tr><th style="width:90px">Bagian</th><th>Isi</th></tr>'+
+   '<tr><td>Blok 1</td><td>Pertemuan 1&ndash;8 &mdash; kebudayaan Nusantara dari prasejarah sampai masa kini, ditutup Proyek 1 (Cultural Heritage Trail Map).</td></tr>'+
+   '<tr><td>Blok 2</td><td>Pertemuan 9&ndash;16 &mdash; kebudayaan Melayu Kepulauan Riau, metode penghimpunan data, etika penyajian, ditutup Proyek 2 (Heritage Interpretation Showcase).</td></tr>'+
+   '<tr><td>Alat bantu</td><td>Lima alat interaktif yang dipakai langsung pada pertemuan tertentu dan pada pengerjaan proyek.</td></tr>'+
+   '<tr><td>Bank soal</td><td>'+KUIS.length+' butir siap pakai untuk Kahoot, Quizizz, atau dikerjakan langsung di sini.</td></tr></table>'+
+   '<h3>Catatan</h3><div class="note">Setiap pertemuan memuat kotak <b>Media digital di kelas</b> berisi rumusan pertanyaan yang sudah siap disalin ke Mentimeter, Kahoot, Quizizz, atau Padlet. Tombol <i>Salin</i> menempatkan teksnya ke papan klip.</div>';
+}
+function pgPanduan(){
+  return '<h2 class="pg">Panduan pemakaian</h2><div class="meta">Untuk dosen pengampu dan mahasiswa</div>'+
+  '<h3>Alur satu pertemuan (100 menit)</h3><table class="r">'+
+  '<tr><th style="width:90px">Menit</th><th>Kegiatan</th><th>Media</th></tr>'+
+  '<tr><td>0&ndash;10</td><td>Pemantik: satu pertanyaan terbuka untuk membuka kelas dan mengukur pengetahuan awal.</td><td>Mentimeter (word cloud / open ended)</td></tr>'+
+  '<tr><td>10&ndash;45</td><td>Uraian materi memakai bagian <b>Peta materi</b> pada halaman pertemuan; kotak dibuka satu per satu sambil dibahas.</td><td>Berkas ini, ditayangkan</td></tr>'+
+  '<tr><td>45&ndash;75</td><td>Kerja kelompok dengan alat bantu atau penelusuran sumber.</td><td>Alat bantu, Padlet, Google My Maps</td></tr>'+
+  '<tr><td>75&ndash;90</td><td>Kuis cepat sebagai pengukur pemahaman.</td><td>Kahoot / Quizizz (Bank Soal)</td></tr>'+
+  '<tr><td>90&ndash;100</td><td>Penutup: penegasan tema dan pemberian tugas terstruktur.</td><td>&mdash;</td></tr></table>'+
+  '<h3>Menyiapkan kuis di Kahoot atau Quizizz</h3><ul class="t">'+
+  '<li>Buka menu <b>Bank Soal</b>, pilih pertemuan yang dikehendaki, lalu tekan <i>Salin soal pertemuan ini</i>.</li>'+
+  '<li>Teks tersalin dalam susunan satu soal per baris dengan pilihan dipisah tanda titik koma dan jawaban benar ditandai. Susunan ini dapat ditempel ke lembar impor Kahoot atau Quizizz.</li>'+
+  '<li>Bila waktu terbatas, soal juga dapat dikerjakan langsung di berkas ini pada bagian <i>Uji Pemahaman</i>.</li></ul>'+
+  '<h3>Bagi mahasiswa yang belajar mandiri</h3><ul class="t">'+
+  '<li>Bacalah bagian <b>Tujuan</b> lebih dahulu, baru buka <b>Peta materi</b>.</li>'+
+  '<li>Setiap pertemuan menunjuk bab pada <i>Buku Materi Ajar Sejarah Kebudayaan Indonesia</i>. Berkas ini adalah penuntun, bukan pengganti buku.</li>'+
+  '<li>Kerjakan uji pemahaman setelah membaca, bukan sebelumnya.</li></ul>'+
+  '<h3>Keperluan teknis</h3><div class="note">Berkas ini satu kesatuan dan tidak memanggil apa pun dari internet, sehingga tetap berjalan ketika jaringan kampus terganggu. Berkas dapat digandakan, dikirim melalui LMS, atau disimpan di flashdisk. Ia tampil baik pada proyektor maupun pada layar ponsel, dan dapat dicetak melalui menu cetak peramban.</div>';
+}
+function pgPert(w){
+  var p=null;for(var i=0;i<PERTEMUAN.length;i++)if(PERTEMUAN[i].w===w)p=PERTEMUAN[i];
+  if(!p)return '<p>Halaman tidak ditemukan.</p>';
+  var h='<div class="meta">Pertemuan ke-'+p.w+' &middot; Blok '+p.blok+'</div>';
+  h+='<h2 class="pg">'+esc(p.judul)+'</h2>';
+  var sd=SDG[p.w];
+  h+='<div class="chips"><span class="chip">'+esc(p.bk)+'</span><span class="chip">'+esc(p.cpl)+'</span><span class="chip g">'+esc(p.bab)+' buku materi ajar</span>'+(sd?sd.kode.map(function(k){return '<span class="chip" style="background:#E7F2EC;border-color:#b9d9c9;color:#14624a">'+esc(k)+'</span>';}).join(''):'')+'</div>';
+  h+='<div class="note">'+esc(p.sub)+'</div>';
+  h+='<h3>Tujuan pembelajaran</h3><ul class="t">';
+  p.tujuan.forEach(function(t){h+='<li>'+esc(t)+'</li>';});h+='</ul>';
+  h+='<h3>Peta materi</h3>';
+  p.poin.forEach(function(k){
+    h+='<div class="poin"><button><span>'+esc(k.h)+'</span><span class="car">&#9656;</span></button><div class="bd">'+esc(k.d)+'</div></div>';});
+  h+='<h3>Media digital di kelas</h3>';
+  p.media.forEach(function(m){
+    h+='<div class="mcard"><div class="hd">'+esc(m.app)+' &middot; '+esc(m.tipe)+'</div>'+
+       '<div class="pr">'+esc(m.prompt)+'</div>'+
+       '<button class="cp" data-copy="'+esc(m.prompt).replace(/"/g,'&quot;')+'">Salin teks</button></div>';});
+  if(sd){ h+='<h3>Tautan TPB/SDGs</h3><div class="note" style="background:#E7F2EC"><b>'+sd.kode.join(' &middot; ')+'.</b> '+esc(sd.ket)+'</div>'; }
+  h+='<h3>Tugas</h3><div class="note">'+esc(p.tugas)+'</div>';
+  var pv=w>1?'<button class="btn sec" data-go="p'+(w-1)+'">&larr; Pertemuan '+(w-1)+'</button> ':'';
+  var nx=w<16?'<button class="btn" data-go="p'+(w+1)+'">Pertemuan '+(w+1)+' &rarr;</button>':'<button class="btn" data-go="kuis">Uji Pemahaman &rarr;</button>';
+  h+='<div style="margin-top:28px;display:flex;gap:10px;flex-wrap:wrap">'+pv+nx+'</div>';
+  return h;
+}
+
+function pgSDG(){
+  var h='<h2 class="pg">Tautan TPB/SDGs</h2><div class="meta">Tujuan Pembangunan Berkelanjutan pada mata kuliah ini</div>';
+  h+='<div class="note">'+esc(SDG_UMUM)+'</div>';
+  h+='<h3>Pertemuan yang membawa tautan TPB</h3><table class="r"><tr><th style="width:92px">Pertemuan</th><th style="width:150px">Sasaran</th><th>Bentuk penerapan</th></tr>';
+  PERTEMUAN.forEach(function(p){ var s=SDG[p.w]; if(!s) return;
+    h+='<tr><td><b>'+p.w+'</b><br><span style="font-size:12px;color:var(--mut)">'+esc(p.judul)+'</span></td>'+
+       '<td><b>'+s.kode.join('<br>')+'</b></td><td>'+esc(s.ket)+'</td></tr>'; });
+  h+='</table>';
+  h+='<h3>Catatan ketelitian rujukan</h3><div class="note">'+esc(SDG_CATATAN)+'</div>';
+  h+='<h3>Rujukan</h3><ol class="pust">'+SDG_PUSTAKA.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ol>';
+  return h;
+}
+function pgPustaka(){
+  var h='<h2 class="pg">Daftar Pustaka</h2><div class="meta">Rujukan utama mata kuliah</div><ol class="pust">';
+  PUSTAKA.forEach(function(x){h+='<li>'+x+'</li>';});
+  h+='</ol><h3>Laman rujukan</h3><div class="note">Warisan Budaya Takbenda Indonesia &mdash; laman penetapan nasional Kementerian Pendidikan. Dipakai pada Pertemuan 7 dan 14 untuk menelusuri status penetapan sebuah tradisi. Alamatnya dibagikan melalui LMS agar tetap mutakhir.</div>';
+  return h;
+}
+/* ---------- kuis ---------- */
+var kState={mode:'latih',sel:{},done:false,filter:0};
+function pgKuis(){
+  var h='<h2 class="pg">Bank Soal &amp; Uji Pemahaman</h2><div class="meta">'+KUIS.length+' butir pilihan ganda beserta pembahasan</div>';
+  h+='<div class="note">Pilih pertemuan untuk menyaring soal, lalu kerjakan langsung atau salin untuk diimpor ke Kahoot dan Quizizz.</div>';
+  h+='<label class="f" for="kf">Saring menurut pertemuan</label><select id="kf"><option value="0">Semua pertemuan ('+KUIS.length+' soal)</option>';
+  for(var w=1;w<=16;w++){var n=KUIS.filter(function(k){return k.w===w;}).length;if(n)h+='<option value="'+w+'"'+(kState.filter===w?' selected':'')+'>Pertemuan '+w+' ('+n+' soal)</option>';}
+  h+='</select>';
+  h+='<div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn sec" id="ksalin">Salin soal terpilih (format impor)</button><button class="btn sec" id="kreset">Ulangi pengerjaan</button></div>';
+  h+='<div id="klist"></div><div id="kres"></div>';
+  h+='<button class="btn" id="kperiksa" style="margin-top:6px">Periksa jawaban</button>';
+  return h;
+}
+function kSet(){return KUIS.filter(function(k){return kState.filter===0||k.w===kState.filter;});}
+function renderK(){
+  var s=kSet(),h='';
+  s.forEach(function(k,i){
+    var gi=KUIS.indexOf(k);
+    h+='<div class="q"><div style="font-weight:650;margin-bottom:8px">'+(i+1)+'. '+esc(k.q)+' <span class="chip" style="font-weight:600">P'+k.w+'</span></div>';
+    k.o.forEach(function(o,j){
+      var c='opt';
+      if(kState.sel[gi]===j)c+=' sel';
+      if(kState.done){if(j===k.a)c+=' ok';else if(kState.sel[gi]===j)c+=' bad';}
+      h+='<div class="'+c+'" data-q="'+gi+'" data-o="'+j+'">'+String.fromCharCode(65+j)+'. '+esc(o)+'</div>';});
+    if(kState.done)h+='<div class="exp"><b>Pembahasan.</b> '+esc(k.e)+'</div>';
+    h+='</div>';});
+  el('klist').innerHTML=h;
+  Array.prototype.forEach.call(el('klist').querySelectorAll('.opt'),function(d){
+    d.onclick=function(){if(kState.done)return;kState.sel[d.getAttribute('data-q')]=parseInt(d.getAttribute('data-o'),10);renderK();};});
+}
+function wireKuis(){
+  renderK();
+  el('kf').onchange=function(){kState.filter=parseInt(this.value,10);kState.done=false;kState.sel={};el('kres').innerHTML='';renderK();};
+  el('kreset').onclick=function(){kState.done=false;kState.sel={};el('kres').innerHTML='';renderK();};
+  el('kperiksa').onclick=function(){
+    var s=kSet(),b=0,t=s.length;
+    s.forEach(function(k){if(kState.sel[KUIS.indexOf(k)]===k.a)b++;});
+    kState.done=true;renderK();
+    var pc=Math.round(b/t*100);
+    var ket=pc>=80?'<span class="pill ok">Sangat baik</span>':pc>=60?'<span class="pill mid">Cukup</span>':'<span class="pill bad">Perlu mengulang bacaan</span>';
+    el('kres').innerHTML='<div class="res">'+ket+' <b>'+b+' dari '+t+' benar ('+pc+'%).</b><br>'+
+      (pc>=80?'Pemahaman Anda memadai untuk melanjutkan ke pertemuan berikutnya.':
+       pc>=60?'Bacalah kembali bagian yang jawabannya keliru pada buku materi ajar, lalu ulangi.':
+       'Bacalah ulang bab yang bersangkutan pada buku materi ajar sebelum mengulangi kuis ini.')+'</div>';
+    window.scrollTo(0,document.body.scrollHeight);};
+  el('ksalin').onclick=function(){
+    var s=kSet(),t='';
+    s.forEach(function(k,i){
+      t+=(i+1)+'. '+k.q+'\n';
+      k.o.forEach(function(o,j){t+='   '+String.fromCharCode(65+j)+'. '+o+(j===k.a?'  [BENAR]':'')+'\n';});
+      t+='   Pembahasan: '+k.e+'\n\n';});
+    copy(t);};
+}
+/* ---------- alat bantu ---------- */
+function pgTool(id){
+  if(id==='t-wujud')return '<h2 class="pg">Penentu Wujud Budaya</h2><div class="meta">Dipakai pada Pertemuan 1 &middot; Bab 1 buku materi ajar</div>'+
+   '<div class="note">Alat ini melatih kebiasaan membedakan gagasan, aktivitas, dan artefak. Tulis satu objek budaya, jawab tiga pertanyaan, lalu bandingkan hasilnya dengan penalaran Anda sendiri.</div>'+
+   '<div class="tool" style="margin-top:18px">'+
+   '<label class="f">Objek budaya yang diamati</label><input type="text" id="w-obj" placeholder="Contoh: tepak sirih, tari zapin, pantang melaut pada bulan tertentu">'+
+   '<label class="f">1. Dapatkah objek ini disentuh dan dipindahkan?</label><select id="w-a"><option value="y">Ya, ia berupa benda</option><option value="n">Tidak</option></select>'+
+   '<label class="f">2. Apakah ia berupa rangkaian tindakan yang dilakukan orang pada waktu tertentu?</label><select id="w-b"><option value="n">Tidak</option><option value="y">Ya, ada orang yang melakukannya</option></select>'+
+   '<label class="f">3. Apakah ia berupa nilai, aturan, atau keyakinan yang ada di kepala orang?</label><select id="w-c"><option value="n">Tidak</option><option value="y">Ya</option></select>'+
+   '<button class="btn" id="w-go">Tentukan wujudnya</button><div id="w-out"></div></div>';
+  if(id==='t-sumber')return '<h2 class="pg">Penyaring Kesahihan Sumber</h2><div class="meta">Dipakai pada Pertemuan 11 dan pada pengerjaan Proyek 2 &middot; Bab 2</div>'+
+   '<div class="note">Enam pertanyaan berikut adalah bentuk sederhana dari kritik sumber. Isilah untuk satu sumber yang hendak Anda pakai; hasilnya dapat dilampirkan pada berkas proyek.</div>'+
+   '<div class="tool" style="margin-top:18px">'+
+   '<label class="f">Nama sumber</label><input type="text" id="s-nm" placeholder="Contoh: Tuhfat al-Nafis terjemahan 1982, hlm. 137">'+
+   '<label class="f">1. Jenis sumber</label><select id="s1"><option value="2">Primer &mdash; naskah, prasasti, foto sezaman, benda, keterangan pelaku</option><option value="1">Sekunder &mdash; buku atau artikel yang mengolah sumber primer</option><option value="0">Tersier &mdash; ensiklopedia, laman ringkasan, blog</option></select>'+
+   '<label class="f">2. Kejelasan pembuat</label><select id="s2"><option value="2">Nama pembuat dan lembaganya jelas</option><option value="1">Nama ada tetapi latar belakangnya tidak diketahui</option><option value="0">Tidak diketahui siapa pembuatnya</option></select>'+
+   '<label class="f">3. Kedekatan pembuat dengan peristiwa</label><select id="s3"><option value="2">Pelaku atau saksi langsung</option><option value="1">Sezaman tetapi tidak menyaksikan</option><option value="0">Jauh sesudah peristiwa</option></select>'+
+   '<label class="f">4. Dukungan sumber lain yang berdiri sendiri</label><select id="s4"><option value="2">Didukung dua sumber lain atau lebih</option><option value="1">Didukung satu sumber lain</option><option value="0">Belum ditemukan pendukung</option></select>'+
+   '<label class="f">5. Keterbukaan tentang kepentingan penulis</label><select id="s5"><option value="2">Kepentingan penulis dinyatakan atau mudah dikenali</option><option value="1">Ada dugaan kepentingan tetapi tidak dinyatakan</option><option value="0">Tidak dapat dinilai</option></select>'+
+   '<label class="f">6. Ketertelusuran</label><select id="s6"><option value="2">Ada penerbit, tahun, dan halaman yang dapat dirujuk</option><option value="1">Sebagian keterangan penerbitan ada</option><option value="0">Tidak dapat dirujuk secara pasti</option></select>'+
+   '<button class="btn" id="s-go">Nilai sumber</button><div id="s-out"></div></div>';
+  if(id==='t-status')return '<h2 class="pg">Penelusur Status Warisan Budaya</h2><div class="meta">Dipakai pada Pertemuan 7 dan 14 &middot; Bab 14</div>'+
+   '<div class="note">Jalur hukum warisan budaya benda dan takbenda berbeda. Alat ini menuntun Anda ke jalur yang tepat beserta dasar aturannya. Hasil alat ini bersifat penuntun kelas, bukan penetapan resmi.</div>'+
+   '<div class="tool" style="margin-top:18px">'+
+   '<label class="f">Objek yang ditelusuri</label><input type="text" id="h-nm" placeholder="Contoh: Masjid Raya Sultan Riau; tari zapin; tenun songket">'+
+   '<label class="f">1. Apakah objek ini berwujud benda &mdash; benda lepas, bangunan, struktur, situs, atau kawasan?</label><select id="h1"><option value="y">Ya, berwujud benda</option><option value="n">Tidak, ia berupa praktik, pengetahuan, atau pertunjukan</option></select>'+
+   '<div id="h-benda"><label class="f">2. Berapa usianya?</label><select id="h2"><option value="y">50 tahun atau lebih</option><option value="n">Kurang dari 50 tahun</option></select>'+
+   '<label class="f">3. Apakah memiliki arti khusus bagi sejarah, ilmu pengetahuan, pendidikan, agama, atau kebudayaan?</label><select id="h3"><option value="y">Ya</option><option value="n">Belum dapat ditunjukkan</option></select></div>'+
+   '<div id="h-tak" style="display:none"><label class="f">2. Termasuk domain yang mana?</label><select id="h4">'+
+   '<option>Tradisi dan ekspresi lisan</option><option>Seni pertunjukan</option><option>Adat istiadat, ritus, dan perayaan</option><option>Pengetahuan dan kebiasaan perilaku mengenai alam dan semesta</option><option>Kemahiran kerajinan tradisional</option></select>'+
+   '<label class="f">3. Apakah masih ada pewaris yang mengajarkan dan mempraktikkannya?</label><select id="h5"><option value="y">Ya, masih diwariskan</option><option value="n">Tinggal sedikit atau terancam berhenti</option></select></div>'+
+   '<button class="btn" id="h-go">Telusuri jalurnya</button><div id="h-out"></div></div>';
+  if(id==='t-naskah')return '<h2 class="pg">Penyusun Kerangka Naskah Interpretasi</h2><div class="meta">Dipakai pada Pertemuan 15 dan pada pengerjaan Proyek 2 &middot; Bab 15</div>'+
+   '<div class="note">Isilah kotak berikut, lalu tekan tombol di bawah untuk menghasilkan kerangka naskah yang siap dikembangkan. Tema ditulis sebagai satu kalimat lengkap, bukan sebagai label pokok bahasan.</div>'+
+   '<div class="tool" style="margin-top:18px">'+
+   '<label class="f">Objek atau kawasan</label><input type="text" id="n-obj" placeholder="Contoh: Kompleks Masjid Raya Sultan Riau, Pulau Penyengat">'+
+   '<label class="f">Audiens dan waktu</label><input type="text" id="n-aud" placeholder="Contoh: rombongan pelajar SMA, 12 menit">'+
+   '<label class="f">Tema besar &mdash; satu kalimat lengkap</label><textarea id="n-tema" placeholder="Contoh: Pulau kecil ini pernah menjadi tempat bahasa yang kini kita pakai sehari-hari ditata dan dibukukan."></textarea>'+
+   '<label class="f">Pembuka yang menahan langkah</label><textarea id="n-buka" placeholder="Sebuah pertanyaan, benda kecil yang dipegang, atau bunyi yang diperdengarkan."></textarea>'+
+   '<label class="f">Simpul 1 &mdash; objek yang terlihat + maknanya</label><textarea id="n-s1"></textarea>'+
+   '<label class="f">Simpul 2</label><textarea id="n-s2"></textarea>'+
+   '<label class="f">Simpul 3</label><textarea id="n-s3"></textarea>'+
+   '<label class="f">Penutup yang mengikat dan ajakan kecil</label><textarea id="n-tutup"></textarea>'+
+   '<label class="f">Sumber yang dipakai (satu per baris, sertakan halaman)</label><textarea id="n-sum"></textarea>'+
+   '<button class="btn" id="n-go">Susun kerangka</button><div id="n-out"></div></div>';
+  if(id==='t-rute')return '<h2 class="pg">Pemeriksa Kelayakan Rute</h2><div class="meta">Dipakai pada Pertemuan 8 &middot; Proyek 1</div>'+
+   '<div class="note">Rancangan rute yang indah di atas kertas belum tentu dapat ditempuh. Periksa rancangan kelompok Anda dengan sepuluh butir berikut sebelum dipresentasikan.</div>'+
+   '<div class="tool" style="margin-top:18px"><div id="r-list"></div><button class="btn" id="r-go">Hitung kesiapan</button><div id="r-out"></div></div>';
+  return '';
+}
+var RUTE=['Tema pengikat dapat dinyatakan dalam satu kalimat lengkap.',
+ 'Jumlah titik antara lima dan tujuh, tidak lebih.',
+ 'Urutan titik mengikuti alur cerita, bukan sekadar urutan jarak.',
+ 'Jarak antartitik dapat ditempuh sesuai moda yang direncanakan.',
+ 'Jam buka tiap titik sudah diperiksa, termasuk hari libur.',
+ 'Tersedia tempat berteduh dan toilet pada sekurang-kurangnya dua titik.',
+ 'Akses bagi pengunjung berkursi roda sudah diperiksa dan dicatat apa adanya.',
+ 'Tiap titik disertai sumber keterangan yang dapat dirujuk.',
+ 'Cerita yang berstatus tutur setempat dinyatakan demikian, tidak disajikan sebagai fakta.',
+ 'Perkiraan waktu total termasuk perpindahan, jeda, dan waktu bertanya.'];
+function wireTool(id){
+  if(id==='t-wujud'){
+    el('w-go').onclick=function(){
+      var o=el('w-obj').value.trim()||'Objek ini';
+      var a=el('w-a').value,b=el('w-b').value,c=el('w-c').value;
+      var hasil=[],ket='';
+      if(a==='y')hasil.push('artefak');
+      if(b==='y')hasil.push('aktivitas');
+      if(c==='y')hasil.push('gagasan');
+      if(!hasil.length){ket='<span class="pill bad">Belum terjawab</span> Ketiga pertanyaan dijawab tidak. Periksa kembali: hampir setiap objek budaya menyentuh sekurang-kurangnya satu wujud. Bila objeknya adalah sebuah benda, jawab pertanyaan pertama dengan ya.';}
+      else if(hasil.length===1){ket='<span class="pill mid">Satu wujud</span> <b>'+esc(o)+'</b> Anda tempatkan pada wujud <b>'+hasil[0]+'</b>. Pertanyaan lanjutan: benarkah tidak ada wujud lain yang menyertainya? Sebuah benda hampir selalu dipakai dalam suatu tindakan, dan tindakan itu berdiri di atas suatu nilai.';}
+      else{ket='<span class="pill ok">'+hasil.length+' wujud</span> <b>'+esc(o)+'</b> menyentuh wujud <b>'+hasil.join(', ')+'</b>. Inilah jawaban yang paling sering benar: ketiga wujud biasanya hadir bersamaan pada satu objek.';}
+      var cth='<table class="r"><tr><th>Wujud</th><th>Contoh pada tepak sirih</th></tr>'+
+        '<tr><td>Gagasan</td><td>Aturan kesantunan: tamu dipersilakan lebih dahulu; sirih ditawarkan sebagai tanda penerimaan.</td></tr>'+
+        '<tr><td>Aktivitas</td><td>Tindakan menyodorkan tepak dan mengambil sirih dalam upacara pinangan.</td></tr>'+
+        '<tr><td>Artefak</td><td>Kotak berukir beserta isinya: sirih, kapur, gambir, pinang, tembakau.</td></tr></table>';
+      el('w-out').innerHTML='<div class="res">'+ket+'</div><h3>Pembanding</h3>'+cth;};
+  }
+  if(id==='t-sumber'){
+    el('s-go').onclick=function(){
+      var t=0;['s1','s2','s3','s4','s5','s6'].forEach(function(k){t+=parseInt(el(k).value,10);});
+      var nm=el('s-nm').value.trim()||'Sumber ini';var pc=Math.round(t/12*100);
+      var v,s;
+      if(t>=10){v='<span class="pill ok">Layak dipakai</span>';s='Sumber ini dapat dipakai sebagai rujukan utama. Tetap sebutkan halaman pada daftar sumber proyek Anda.';}
+      else if(t>=7){v='<span class="pill mid">Layak dengan catatan</span>';s='Sumber ini dapat dipakai, tetapi keterangannya perlu disandingkan dengan sekurang-kurangnya satu sumber lain yang berdiri sendiri sebelum disajikan kepada pengunjung.';}
+      else if(t>=4){v='<span class="pill mid">Perlu penguatan</span>';s='Jangan dijadikan rujukan tunggal. Carilah sumber primer atau sekunder yang lebih dekat dengan peristiwanya. Bila tetap dipakai, nyatakan keterbatasannya.';}
+      else{v='<span class="pill bad">Belum layak</span>';s='Sumber ini belum memenuhi syarat untuk dirujuk dalam naskah interpretasi. Pakailah ia untuk mencari jalan menuju sumber yang lebih kuat, bukan untuk dikutip.';}
+      var ct=[];
+      if(el('s1').value==='0')ct.push('Sumber tersier hanya dipakai untuk menemukan jalan, bukan untuk dikutip.');
+      if(el('s4').value==='0')ct.push('Belum ada sumber pendukung yang berdiri sendiri &mdash; ini kelemahan yang paling menentukan.');
+      if(el('s6').value==='0')ct.push('Tanpa keterangan penerbitan, pembaca tidak dapat memeriksa ulang klaim Anda.');
+      el('s-out').innerHTML='<div class="res">'+v+' <b>'+esc(nm)+'</b> memperoleh '+t+' dari 12 ('+pc+'%).<br>'+s+
+        (ct.length?'<br><br><b>Catatan khusus.</b><ul class="t">'+ct.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul>':'')+'</div>';};
+  }
+  if(id==='t-status'){
+    var sw=function(){var b=el('h1').value==='y';el('h-benda').style.display=b?'':'none';el('h-tak').style.display=b?'none':'';};
+    el('h1').onchange=sw;sw();
+    el('h-go').onclick=function(){
+      var nm=el('h-nm').value.trim()||'Objek ini';var h='';
+      if(el('h1').value==='y'){
+        var us=el('h2').value==='y',ar=el('h3').value==='y';
+        if(us&&ar)h='<span class="pill ok">Jalur cagar budaya</span> <b>'+esc(nm)+'</b> memenuhi dua kriteria pokok pada Undang-Undang Nomor 11 Tahun 2010 tentang Cagar Budaya: berusia sekurang-kurangnya 50 tahun dan memiliki arti khusus. Langkah berikutnya adalah pendaftaran kepada dinas kebudayaan kabupaten atau kota, penilaian oleh Tim Ahli Cagar Budaya, lalu penetapan berjenjang sampai peringkat nasional bila memenuhi syarat.';
+        else if(!us&&ar)h='<span class="pill mid">Belum memenuhi syarat usia</span> <b>'+esc(nm)+'</b> memiliki arti khusus, tetapi usianya belum mencapai 50 tahun. Undang-Undang membuka kemungkinan lain, yaitu bila objek mewakili masa gaya paling singkat 50 tahun. Telusuri gaya bangunannya sebelum menyimpulkan.';
+        else h='<span class="pill bad">Belum dapat diajukan</span> <b>'+esc(nm)+'</b> belum dapat ditunjukkan arti khususnya bagi sejarah, ilmu pengetahuan, pendidikan, agama, atau kebudayaan. Kajian nilai penting perlu disusun lebih dahulu; tanpa itu berkas pendaftaran akan tertahan di tahap penilaian.';
+        h+='<br><br><b>Dasar aturan.</b> UU 11/2010 mengatur objek kebendaan: benda, bangunan, struktur, situs, dan kawasan. Pelestariannya mencakup pelindungan, pengembangan, dan pemanfaatan.';
+      } else {
+        var dm=el('h4').value,wr=el('h5').value==='y';
+        h='<span class="pill ok">Jalur warisan budaya takbenda</span> <b>'+esc(nm)+'</b> berada pada domain <b>'+esc(dm)+'</b>. Jalurnya terpisah dari UU 11/2010: pencatatan oleh dinas kebudayaan, pengusulan penetapan sebagai Warisan Budaya Takbenda Indonesia oleh kementerian, dan &mdash; bila memenuhi syarat &mdash; pengusulan ke daftar UNESCO.';
+        h+=wr?'<br><br><span class="pill ok">Masih diwariskan</span> Bentuk pelindungan yang paling sesuai adalah menjaga agar pewarisan berlanjut: sanggar, kelas, dan kesempatan tampil. Pendokumentasian menyusul, bukan menggantikan.'
+              :'<br><br><span class="pill bad">Terancam berhenti</span> Pendokumentasian menjadi mendesak: rekaman audio dan video, wawancara dengan pewaris yang tersisa, dan catatan tertulis. Bersamaan dengan itu perlu diusahakan pewarisan aktif, sebab rekaman tidak dapat menggantikan orang yang mempraktikkannya.';
+        h+='<br><br><b>Catatan.</b> Lima domain warisan budaya takbenda: tradisi dan ekspresi lisan; seni pertunjukan; adat istiadat, ritus, dan perayaan; pengetahuan dan kebiasaan perilaku mengenai alam dan semesta; kemahiran kerajinan tradisional.';
+      }
+      el('h-out').innerHTML='<div class="res">'+h+'</div>';};
+  }
+  if(id==='t-naskah'){
+    el('n-go').onclick=function(){
+      var g=function(k){return el(k).value.trim();};
+      var obj=g('n-obj')||'[objek belum diisi]';
+      var t=g('n-tema');
+      var warn='';
+      if(t&&!/[.!?]$/.test(t))warn='<div class="res"><span class="pill mid">Periksa tema</span> Tema Anda belum berupa kalimat lengkap. Tema yang baik dapat dibaca berdiri sendiri dan diakhiri titik.</div>';
+      if(!t)warn='<div class="res"><span class="pill bad">Tema kosong</span> Tanpa tema, naskah akan menjadi daftar keterangan. Isilah kotak tema dengan satu kalimat lengkap sebelum melanjutkan.</div>';
+      var n='';
+      n+='NASKAH INTERPRETASI\n'+obj+'\n';
+      n+='Audiens dan waktu: '+(g('n-aud')||'[belum diisi]')+'\n';
+      n+='\nTEMA BESAR\n'+(t||'[belum diisi]')+'\n';
+      n+='\n1. PEMBUKA\n'+(g('n-buka')||'[belum diisi]')+'\n';
+      n+='\n2. KONTEKS\nTempatkan objek dalam waktu dan ruangnya dalam dua sampai tiga kalimat.\n';
+      n+='\n3. SIMPUL CERITA\n';
+      n+='   Simpul 1 — '+(g('n-s1')||'[belum diisi]')+'\n';
+      n+='   Simpul 2 — '+(g('n-s2')||'[belum diisi]')+'\n';
+      n+='   Simpul 3 — '+(g('n-s3')||'[belum diisi]')+'\n';
+      n+='\n4. PENUTUP DAN AJAKAN\n'+(g('n-tutup')||'[belum diisi]')+'\n';
+      n+='\n5. SUMBER\n'+(g('n-sum')||'[belum diisi]')+'\n';
+      n+='\nCatatan pembawaan: tandai kalimat yang terdengar seperti membaca ensiklopedia, lalu tulis ulang dengan kalimat sendiri.\n';
+      el('n-out').innerHTML=warn+'<h3>Kerangka naskah</h3><textarea style="min-height:360px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13.5px" readonly>'+esc(n)+'</textarea>'+
+        '<button class="cp" id="n-cp" style="margin-top:10px">Salin kerangka</button>';
+      el('n-cp').onclick=function(){copy(n);};};
+  }
+  if(id==='t-rute'){
+    var h='';RUTE.forEach(function(x,i){h+='<div class="opt" data-i="'+i+'" style="display:flex;gap:10px;align-items:flex-start"><span style="font-weight:700;color:#6B7280">'+(i+1)+'.</span><span>'+x+'</span></div>';});
+    el('r-list').innerHTML=h;
+    var on={};
+    Array.prototype.forEach.call(el('r-list').querySelectorAll('.opt'),function(d){
+      d.onclick=function(){var i=d.getAttribute('data-i');on[i]=!on[i];d.classList.toggle('ok',!!on[i]);};});
+    el('r-go').onclick=function(){
+      var n=0;for(var k in on)if(on[k])n++;
+      var v=n===10?'<span class="pill ok">Siap dipresentasikan</span>':n>=7?'<span class="pill mid">Hampir siap</span>':'<span class="pill bad">Belum siap</span>';
+      var s=n===10?'Seluruh butir terpenuhi. Pastikan lembar keterangan tiap titik sudah tercetak sebelum presentasi.':
+            n>=7?'Selesaikan butir yang belum tercentang. Butir kelayakan fisik dan sumber adalah yang paling sering menjadi catatan penguji.':
+            'Kurang dari tujuh butir terpenuhi. Rancangan ini masih berupa daftar tempat; kembalilah ke penetapan tema dan pemeriksaan kelayakan.';
+      el('r-out').innerHTML='<div class="res">'+v+' <b>'+n+' dari 10 butir terpenuhi.</b><br>'+s+'</div>';};
+  }
+}
+/* ---------- mulai ---------- */
+buildRail();
+el('burger').onclick=function(){el('rail').classList.toggle('show');};
+var st=(location.hash||'').replace('#','');
+go(st||'home');
+
+</script>
+</body></html>
